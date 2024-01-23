@@ -26,9 +26,9 @@ export const Icons = {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="1.75"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.75"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       className="lucide lucide-tent-tree"
     >
       <circle cx="4" cy="4" r="2" />
