@@ -1,15 +1,19 @@
 import Link from "next/link"
+import * as actions from "@/actions"
 
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
-import { buttonVariants } from "@/components/ui/button"
+import { Button, buttonVariants } from "@/components/ui/button"
 import { Icons } from "@/components/icons"
-import { MainNav } from "@/components/main-nav"
-import { ThemeToggle } from "@/components/theme-toggle"
+import { MainNav } from "@/components/header/main-nav"
+import { ThemeToggle } from "@/components/header/theme-toggle"
+
+import Profile from "../client-profile"
+import { LoginButton } from "./login-button"
 
 export function SiteHeader() {
   return (
-    <header className="bg-background sticky top-0 z-40 w-full border-b">
+    <header className="sticky top-0 z-40 w-full border-b border-muted-foreground bg-background">
       <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
         <MainNav items={siteConfig.mainNav} />
         <div className="flex flex-1 items-center justify-end space-x-4">
@@ -45,6 +49,7 @@ export function SiteHeader() {
               </div>
             </Link>
             <ThemeToggle />
+            <LoginButton />
           </nav>
         </div>
       </div>
