@@ -1,3 +1,5 @@
+import paths from '@/config/paths'
+
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
@@ -7,19 +9,19 @@ export const siteConfig = {
   mainNav: [
     {
       title: "Resume",
-      href: "/resume",
+      href: paths.resume(),
     },
     {
       title: "Projects",
-      href: "/projects",
+      href: paths.projects(),
     },
     {
       title: "Books",
-      href: "/books",
+      href: paths.books(),
     },
     {
       title: "Travel",
-      href: "/travel",
+      href: paths.travel(),
     },
   ],
   links: {
