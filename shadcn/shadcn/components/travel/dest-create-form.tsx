@@ -12,6 +12,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover"
 import { Textarea } from "@/components/ui/textarea"
+import FormButton from "@/components/ui/form-button"
 
 export default function DestCreateForm() {
   const [formState, action] = useFormState(actions.createDestination, {
@@ -43,7 +44,7 @@ export default function DestCreateForm() {
                   {formState.errors._form?.join(", ")}
                 </p>
               ) : null}
-              <Button type="submit">Submit</Button>
+              <FormButton>Submit</FormButton>
             </div>
           </form>
         </PopoverContent>
