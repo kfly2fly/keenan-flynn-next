@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import bookImg from "public/talking-to-strangers-cover.jpg"
+import bookImg from "public/books/talking-to-strangers-cover.jpg"
 
 import { siteConfig } from "@/config/site"
 import {

@@ -2,7 +2,7 @@ import { ReactNode } from "react"
 import Image, { type StaticImageData } from "next/image"
 
 interface HeroProps {
-  children: ReactNode
+  children: ReactNode | null | undefined
   imgData: string
   imgAlt: string
   width: number

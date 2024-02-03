@@ -19,7 +19,7 @@ export default function IndexPage() {
   return (
     <main className="w-full relative">
       <Hero
-        imgData="/home-bg-wall.jpg"
+        imgData="/backgrounds/home-bg-wall.jpg"
         imgAlt="Keenan sitting on a wall in Scotland"
         width={3024}
         height={1512}
