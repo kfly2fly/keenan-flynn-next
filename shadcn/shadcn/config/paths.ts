@@ -2,8 +2,8 @@ const paths = {
     home() {
         return '/'
     },
-    resume() {
-        return '/resume'
+    about() {
+        return '/about'
     },
     projects() {
         return '/projects'
@@ -26,7 +26,6 @@ const paths = {
     destPost(slug: string, postId: string) {
         return `/travel/${slug}/posts/${postId}`
     }
-    
 
 
 }

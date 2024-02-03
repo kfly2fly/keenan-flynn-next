@@ -8,8 +8,8 @@ export const siteConfig = {
     "A personal space where I share things I'm interested in.",
   mainNav: [
     {
-      title: "Resume",
-      href: paths.resume(),
+      title: "About Me",
+      href: paths.about(),
     },
     {
       title: "Projects",
