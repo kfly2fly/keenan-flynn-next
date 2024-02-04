@@ -8,6 +8,7 @@ import {
   Tent,
   Twitter,
   Menu,
+  Star,
   type Icon as LucideIcon,
 } from "lucide-react"
 
@@ -20,6 +21,7 @@ export const Icons = {
   linkedin: Linkedin,
   tenttree: MountainSnow,
   hamburger: Menu,
+  star: Star,
   logo: (props: LucideProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
