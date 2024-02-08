@@ -90,7 +90,7 @@ export default async function BookPage() {
                           className="object-contain"
                         />
                       </div>
-                      <div className="w-3/5 mb-2 overflow-hidden text-ellipsis">
+                      <div className="w-3/5 overflow-hidden text-ellipsis">
                         <CardDescription className="text-primary font-semibold">
                           {book.author}
                         </CardDescription>
