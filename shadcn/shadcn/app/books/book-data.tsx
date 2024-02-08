@@ -13,6 +13,7 @@ export const BOOK_DATA = [
     url: "talking-to-strangers",
     author: "Malcom Gladwell",
     favorite: false,
+    bookclub: false,
     rating: 3.5,
     date_finished: "January 23, 2024",
     image: {
@@ -123,6 +124,7 @@ export const BOOK_DATA = [
     url: "the-martian",
     author: "Andy Weir",
     favorite: false,
+    bookclub: false,
     rating: 3.5,
     date_finished: "January 16, 2024",
     image: {
@@ -146,6 +148,7 @@ export const BOOK_DATA = [
     url: "so-good-they-cant-ignore-you",
     author: "Cal Newport",
     favorite: true,
+    bookclub: false,
     rating: 3.5,
     date_finished: "January 10, 2024",
     image: {
@@ -336,6 +339,7 @@ export const BOOK_DATA = [
     url: "gates-of-fire",
     author: "Steven Pressfield",
     favorite: false,
+    bookclub: true,
     rating: 3.5,
     date_finished: "January 3, 2024",
     image: {

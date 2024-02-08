@@ -13,9 +13,10 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import Hero from "@/components/book-hero"
 import CustomCard from "@/components/cust-card"
 import { Icons } from "@/components/header/icons"
-import Hero from "@/components/book-hero"
+import { BookIcon } from "@/components/icons"
 
 import { BOOK_DATA } from "./book-data"
 
@@ -49,10 +50,14 @@ export default async function BookPage() {
                 target="_blank"
                 rel="noreferrer"
                 className={cn(
-                  buttonVariants({ size: "dynamic", className: "font-bold" })
+                  buttonVariants({
+                    size: "dynamic",
+                    className: "font-bold text-base",
+                  })
                 )}
               >
                 Opus Sodalicum
+                <BookIcon className="ml-2 size-6" />
               </Link>
             </div>
           </div>
@@ -66,9 +71,14 @@ export default async function BookPage() {
                     <CardTitle className="text-accent-foreground">
                       {book.title}
                     </CardTitle>
-                    {book.favorite ? (
-                      <Icons.star className="fill-yellow-300 stroke-yellow-400" />
-                    ) : null}
+                    <div className="flex flex-row">
+                      {book.favorite ? (
+                        <Icons.star className="fill-yellow-300 stroke-yellow-400" />
+                      ) : null}
+                      {book.bookclub ? (
+                        <BookIcon className="ml-2 size-6 fill-accent-foreground" />
+                      ) : null}
+                    </div>
                   </CardHeader>
                   <CardContent className="h-3/4">
                     <div className="flex flex-row gap-4 h-full">
