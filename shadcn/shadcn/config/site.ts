@@ -27,5 +27,6 @@ export const siteConfig = {
   links: {
     linkedin: "https://linkedin.com/in/keenanpflynn",
     github: "https://github.com/kfly2fly",
+    bookclub: "https://skybone11.wixsite.com/opussodalicium",
   },
 }
