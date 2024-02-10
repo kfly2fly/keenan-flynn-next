@@ -27,7 +27,7 @@ export const RESUME_DATA = {
   about:
     "Software Engineer focused on building data solutions and exploring web development.",
   summary:
-    "As a budding Software Engineer, I've quickly become a key contributor to multiple projects. I learn fast and communicate effectively, helping my team produce the best product possible. My skills originate in Data Engineering and Science, although I am quickly becoming proficient with React and NextJS.",
+    "As a budding Software Engineer, I've quickly become a key contributor to multiple projects. I learn fast and communicate effectively, helping my team produce the best product possible. My skills originate in Data Engineering and Data Science, although I am quickly becoming proficient with React and NextJS.",
   avatarUrl: "https://avatars.githubusercontent.com/u/92169644?v=4",
   personalWebsiteUrl: "https://keenanflynn.com",
   contact: {
@@ -70,13 +70,60 @@ export const RESUME_DATA = {
       company: "Honeywell Federal Manufacturing & Technology",
       link: "https://kcnsc.doe.gov/",
       badges: ["Q clearance"],
-      title: "Software Engineer I",
+      title: "Software Engineer",
       // logo: ParabolLogo,
       start: "2023",
       end: "Current",
-      description:
-        "●	Developed Realtime Data pipeline to stream data changes from Oracle database to next-gen Factory dashboard.\n○	Pioneered first enterprise use-case of CDC technology to process 500,000 messages/day: Kafka, Qlik, Dataiku.\n○	Managed project with Lean Six Sigma project management tools; completed Greenbelt certification.\n●	Executed R&D project exploring application of Knowledge Graph database for Manufacturing use-case\n○	Implemented Python-Django backend, HBase as graph database, NextJS frontend with Plotly visuals\n○	Generated Statistical aggregations and insights to examine long-term Process Capability.\n●	Automated & Improved business process on Distributed Hadoop data platform and Dataiku analytics platform.",
-      //   "Implemented new features, led squad, worked on improving the way developers ship the code, started migration from Emotion to Tailwind CSS and more. Technologies: React, TypeScript, GraphQL",
+      description: (
+        <ul className="list-disc list-inside">
+          <li>
+            Developed{" "}
+            <span className="text-accent-foreground">
+              Realtime Data pipeline
+            </span>{" "}
+            to stream data changes from{" "}
+            <span className="text-accent-foreground">Oracle </span>
+            database to next-gen Factory dashboard.
+            <ul className="ml-4 list-disc list-inside mb-1">
+              <li>
+                Pioneered first enterprise use-case of CDC technology to process
+                500,000 messages/day:{" "}
+                <span className="text-accent-foreground">Kafka</span>,
+                <span className="text-accent-foreground"> Qlik</span>,
+                <span className="text-accent-foreground"> Dataiku</span>.
+              </li>
+              <li>
+                Managed project with Lean Six Sigma project management tools;
+                completed Greenbelt certification.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            Executed R&D project exploring application of Knowledge Graph
+            database for Manufacturing use-case.
+            <ul className="ml-4 list-disc list-inside mb-1">
+              <li>
+                Implemented{" "}
+                <span className="text-accent-foreground">Python-Django</span>{" "}
+                backend, <span className="text-accent-foreground">HBase</span>{" "}
+                as graph database,
+                <span className="text-accent-foreground"> NextJS</span> frontend
+                with Plotly visuals.
+              </li>
+              <li>
+                Generated Statistical aggregations and insights to examine
+                long-term Process Capability.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Automated & Improved business process on Distributed{" "}
+            <span className="text-accent-foreground">Hadoop</span> data platform
+            and Dataiku analytics platform.
+          </li>
+        </ul>
+      ),
     },
     {
       company: "Sierra Nevada Corporation",
@@ -86,9 +133,30 @@ export const RESUME_DATA = {
       // logo: ClevertechLogo,
       start: "2022",
       end: "2022",
-      description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut reprehenderit, facere voluptates nam esse, pariatur laudantium voluptatum necessitatibus deleniti sequi sunt fugit aliquid saepe, cupiditate amet quia magni suscipit officia.",
+      description: (
+        <ul className="list-disc list-inside">
+          <li>
+            Created, improved, and maintained data pipelines that process
+            petabytes of data using{" "}
+            <span className="text-accent-foreground">Apache Nifi</span>.
+          </li>
 
+          <li>
+            Employed <span className="text-accent-foreground">RESTful</span>{" "}
+            endpoints to insert, update, and retrieve data from{" "}
+            <span className="text-accent-foreground">ElasticSearch</span> and{" "}
+            <span className="text-accent-foreground">MongoDB</span>.
+          </li>
+          <li>
+            Engaged in an Agile environment; fulfilling 100% of Data Engineering
+            sprint goals on or ahead of schedule.
+          </li>
+          <li>
+            Educated on aspects of government contracting, participated in
+            Operational Security on SUI product.
+          </li>
+        </ul>
+      ),
       // "Created Android mobile apps and led teams for companies like Vision Media, DKMS, or AAA. Built live streaming application for Evercast from scratch. Technologies: Android, Kotlin, React, TypeScript, GraphQL",
     },
     {
@@ -99,10 +167,30 @@ export const RESUME_DATA = {
       // logo: JojoMobileLogo,
       start: "2021",
       end: "2022",
-      description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut reprehenderit, facere voluptates nam esse, pariatur laudantium voluptatum necessitatibus deleniti sequi sunt fugit aliquid saepe, cupiditate amet quia magni suscipit officia.",
+      description: (
+        <ul className="list-disc list-inside">
+          <li>
+            Performed database analysis to support SERFF product modernization
+            involving research of{" "}
+            <span className="text-accent-foreground">AWS OpenSearch</span>.
+          </li>
 
-      // "Built an Android team, created Android apps for biggest Polish companies like LOT, Polskie Radio, Agora, PolskaPress",
+          <li>
+            Automated QA processes for data vending project with{" "}
+            <span className="text-accent-foreground">Python</span> scripts;
+            time-savings of 100+ hours.
+          </li>
+          <li>
+            Wrote <span className="text-accent-foreground">SQL</span> to parse
+            and categorize over 40 million file attachments in Oracle database.
+          </li>
+          <li>
+            Submitted JIRA tickets for database changes. Exported, mapped data
+            with <span className="text-accent-foreground">Informatica</span> to
+            modify data format.
+          </li>
+        </ul>
+      ),
     },
   ],
   skills: [

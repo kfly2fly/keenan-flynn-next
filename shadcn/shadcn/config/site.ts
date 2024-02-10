@@ -19,10 +19,10 @@ export const siteConfig = {
       title: "Books",
       href: paths.books(),
     },
-    {
-      title: "Travel",
-      href: paths.travel(),
-    },
+    // {
+    //   title: "Travel",
+    //   href: paths.travel(),
+    // },
   ],
   links: {
     linkedin: "https://linkedin.com/in/keenanpflynn",
