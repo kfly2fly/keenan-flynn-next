@@ -8,7 +8,7 @@ import DestList from "@/components/travel/dest-list"
 export default function TravelPage() {
   return (
     <div className="grid grid-cols-4 gap-4 p-4">
-      <div className="col-span-3">
+      {/* <div className="col-span-3">
         <h1 className="text-xl m-2">Favortite Destinations</h1>
       </div>
       <div className="border shadow p-3">
@@ -16,7 +16,7 @@ export default function TravelPage() {
         <br />
         <h3 className="text-lg">Destinations</h3>
         <DestList/>
-      </div>
+      </div> */}
     </div>
   )
 }
