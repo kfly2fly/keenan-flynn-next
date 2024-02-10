@@ -16,10 +16,10 @@ export default async function PostShowPage({ params }: PostShowPageProps) {
 
   return (
     <div className="space-y-3">
-        <Link className="underline decoration-solid" href={paths.destSlug(slug)}>
+        {/* <Link className="underline decoration-solid" href={paths.destSlug(slug)}>
             {"< "} Back to {slug} 
         </Link>
-        <PostShow postId={postId}/>
+        <PostShow postId={postId}/> */}
     </div>
   )
 }
