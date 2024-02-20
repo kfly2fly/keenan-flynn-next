@@ -3,7 +3,7 @@ import Link from "next/link"
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { Button, buttonVariants } from "@/components/ui/button"
-import Hero from "@/components/book-hero"
+import Hero from "@/components/books/book-hero"
 
 import { BookIcon } from "@/components/icons"
 
