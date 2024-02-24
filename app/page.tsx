@@ -13,7 +13,14 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import CustomCard from "@/components/cust-card"
+import { Icons } from "@/components/header/icons"
 import Hero from "@/components/hero"
+import { BookIcon } from "@/components/icons/book"
+
+import { BOOK_DATA } from "./books/book-data"
+import BookCard from "@/components/books/book-card"
+import { PROJECT_DATA } from "./projects/project-data"
+import ProjectCard from "@/components/projects/project-card"
 
 export default function IndexPage() {
   return (
@@ -60,18 +67,27 @@ export default function IndexPage() {
           </div>
         </div>
       </Hero>
+
       <section className="container mx-auto relative m-4">
-        <div className="flex flex-auto flex-row flex-wrap w-fit items-center justify-center gap-4">
-          <CustomCard />
-          <CustomCard />
-          <CustomCard />
-          <CustomCard />
-          <CustomCard />
-          <CustomCard />
-          <CustomCard />
-          <CustomCard />
+        <div className="flex flex-auto flex-row flex-wrap w-full items-center justify-center gap-4">
+          {PROJECT_DATA.map((project) => {
+            return (
+              <ProjectCard {...project} key={project.url}/>
+            )
+          })}
         </div>
+        {/* <div className="flex flex-auto flex-row flex-wrap w-fit items-center justify-center gap-4">
+          <CustomCard />
+          <CustomCard />
+          <CustomCard />
+          <CustomCard />
+          <CustomCard />
+          <CustomCard />
+          <CustomCard />
+          <CustomCard />
+        </div> */}
       </section>
+      <div className="h-12"/>
     </main>
   )
 }

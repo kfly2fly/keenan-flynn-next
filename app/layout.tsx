@@ -47,7 +47,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           )}
         >
           <SessionProviders>
-            <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <ThemeProvider attribute="class" defaultTheme="dark">
               <div className="relative flex min-h-screen flex-col">
                 <SiteHeader />
                 {/* <div className=" mx-auto flex-1 px-4 md:px-12">{children}</div> */}

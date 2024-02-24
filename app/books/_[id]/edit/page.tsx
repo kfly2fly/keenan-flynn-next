@@ -1,6 +1,6 @@
 import db from '@/db'
 import { notFound } from 'next/navigation'
-import BookEditForm from '@/components/book-edit-form'
+import BookEditForm from '@/components/books/book-edit-form'
 
 interface BookEditPageProps {
     params: {
