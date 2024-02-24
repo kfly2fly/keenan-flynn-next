@@ -19,14 +19,15 @@ interface ProjectCardProps {
   url: string
   githubUrl: string
   hostedUrl: string
+  markdownUrl: string
   date_finished: string
   image: {
     screenshot: string
     imageAlt: string
   }
-  description: string
-  summary: string
-  markdown: string | undefined
+  // description: string
+  // summary: string
+  // markdown: string | undefined
   skills: string[]
 }
 
@@ -57,7 +58,7 @@ export default function ProjectCard(project: ProjectCardProps) {
             ) : null}
           </div> */}
         </CardHeader>
-        <CardContent className="h-3/4">
+        <CardContent className="h-0">
           <div className="flex flex-col gap-4 h-full">
             <div className="relative w-full">
               <Image

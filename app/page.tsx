@@ -87,6 +87,7 @@ export default function IndexPage() {
           <CustomCard />
         </div> */}
       </section>
+      <div className="h-12"/>
     </main>
   )
 }
