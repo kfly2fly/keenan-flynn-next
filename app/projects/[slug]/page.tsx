@@ -10,6 +10,8 @@ import { LoadingMarkdown } from "@/components/projects/markdown-loading"
 
 import { PROJECT_DATA } from "../project-data"
 
+export const revalidate = 3600
+
 interface ProjectShowPageProps {
   params: {
     slug: string
@@ -26,7 +28,17 @@ export default async function ProjectShowPage(props: ProjectShowPageProps) {
     return (
       <main className="container mx-auto relative my-4 md:my-12">
         <section className="relative flex md:hidden justify-center items-start w-full my-4 md:my-12">
-          <Link href={project.hostedUrl}>
+          {project.hostedUrl ? (
+            <Link href={project.hostedUrl}>
+              <Image
+                src={project.image.screenshot}
+                alt={project.image.imageAlt}
+                width={1200}
+                height={515}
+                className="object-contain border-2 rounded-lg border-muted-foreground hover:opacity-85"
+              />
+            </Link>
+          ) : (
             <Image
               src={project.image.screenshot}
               alt={project.image.imageAlt}
@@ -34,7 +46,7 @@ export default async function ProjectShowPage(props: ProjectShowPageProps) {
               height={515}
               className="object-contain border-2 rounded-lg border-muted-foreground hover:opacity-85"
             />
-          </Link>
+          )}
         </section>
         <section className="flex flex-col md:flex-row gap-4 md:gap-16 items-center md:items-start mb-6 md:mb-0 md:justify-between">
           <div className="flex flex-col gap-1.5">
@@ -68,28 +80,39 @@ export default async function ProjectShowPage(props: ProjectShowPageProps) {
               Github Repo
               <Icons.gitHub className="ml-2 h-5 w-5" />
             </Link>
-            <Link
-              href={project.hostedUrl}
-              target="_blank"
-              rel="noreferrer"
-              className={buttonVariants({ size: "dynamic" })}
-            >
-              Hosted URL
-              <Icons.link className="ml-2 h-5 w-5" />
-            </Link>
+            {project.hostedUrl ? (
+              <Link
+                href={project.hostedUrl}
+                target="_blank"
+                rel="noreferrer"
+                className={buttonVariants({ size: "dynamic" })}
+              >
+                Hosted URL
+                <Icons.link className="ml-2 h-5 w-5" />
+              </Link>
+            ) : null}
           </div>
         </section>
         <section className="relative hidden md:flex justify-center items-start w-full my-8">
-          <Link href={project.hostedUrl}>
+          {project.hostedUrl ? (
+            <Link href={project.hostedUrl}>
+              <Image
+                src={project.image.screenshot}
+                alt={project.image.imageAlt}
+                width={1200}
+                height={515}
+                className="object-contain border-2 rounded-lg border-muted-foreground hover:opacity-85"
+              />
+            </Link>
+          ) : (
             <Image
               src={project.image.screenshot}
               alt={project.image.imageAlt}
               width={1200}
               height={515}
-              // fill
               className="object-contain border-2 rounded-lg border-muted-foreground hover:opacity-85"
             />
-          </Link>
+          )}
         </section>
         <section className="flex justify-center">
           <Suspense fallback={<LoadingMarkdown />}>

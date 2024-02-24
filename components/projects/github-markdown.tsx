@@ -1,9 +1,8 @@
-"use client"
-
 import React, { useEffect, useState } from "react"
 import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import rehypeRaw from "rehype-raw";
+
 
 interface MarkdownProps {
   url: string
@@ -27,10 +26,12 @@ export default async function GithubMarkdown(props: MarkdownProps) {
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         rehypePlugins={[rehypeRaw]}
-        children={terms}
+        // children={terms}
         className="w-full"
-      ></ReactMarkdown>
-       {/* <div>{terms}</div> */}
+      >
+        {terms}
+      </ReactMarkdown>
+       <div>{terms}</div>
     </div>
   )
 }

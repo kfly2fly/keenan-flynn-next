@@ -18,16 +18,13 @@ interface ProjectCardProps {
   title: string
   url: string
   githubUrl: string
-  hostedUrl: string
+  hostedUrl: string | null
   markdownUrl: string
   date_finished: string
   image: {
     screenshot: string
     imageAlt: string
   }
-  // description: string
-  // summary: string
-  // markdown: string | undefined
   skills: string[]
 }
 
