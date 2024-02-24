@@ -35,14 +35,14 @@ export const PROJECT_DATA = [
         ]
     },
     {
-        title: "KeenanFlynn.com",
+        title: "KeenanFlynn.com 2.0",
         url: "next-site",
         githubUrl: "https://github.com/kfly2fly/keenan-flynn-next",
         markdownUrl: "https://raw.githubusercontent.com/kfly2fly/keenan-flynn-next/master/README.md",
         hostedUrl: null,
         date_finished: "February 2024",
         image: {
-            screenshot: "/projects/tunelink.png",
+            screenshot: "/projects/keenan-flynn-next.png",
             imageAlt: "A screenshot of this website"
         },
         
