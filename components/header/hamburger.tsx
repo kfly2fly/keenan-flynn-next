@@ -55,9 +55,8 @@ export function Hamburger({ items }: HamburgerProps) {
               {itemsWithHome?.map(
                 (item, index) =>
                   item.href && (
-                    <PopoverClose asChild>
+                    <PopoverClose asChild key={index}>
                       <Link
-                        key={index}
                         href={item.href}
                         className={cn(
                           `flex items-center text-sm font-medium text-muted-foreground ${
