@@ -3,6 +3,7 @@
 import * as React from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { PopoverClose } from "@radix-ui/react-popover"
 
 import { NavItem } from "@/types/nav"
 import paths from "@/config/paths"
@@ -41,38 +42,40 @@ export function Hamburger({ items }: HamburgerProps) {
 
   return (
     <div className="flex md:hidden">
-    <Popover>
-      <PopoverTrigger asChild>
-        <Button variant="outline" size="icon">
-          <Icons.hamburger className="h-6 w-6" />
-        </Button>
-      </PopoverTrigger>
-      <PopoverContent className="w-48">
-        {/* <div className="flex flex-col gap-4"> */}
-        {items?.length ? (
-          <div className="flex flex-col gap-6">
-            {itemsWithHome?.map(
-              (item, index) =>
-                item.href && (
-                  <Link
-                    key={index}
-                    href={item.href}
-                    className={cn(
-                      `flex items-center text-sm font-medium text-muted-foreground ${
-                        pathname === item.href ? "font-bold" : ""
-                      }`,
-                      item.disabled && "cursor-not-allowed opacity-80"
-                    )}
-                  >
-                    {item.title}
-                  </Link>
-                )
-            )}
-          </div>
-        ) : null}
-        {/* </div> */}
-      </PopoverContent>
-    </Popover>
+      <Popover>
+        <PopoverTrigger asChild>
+          <Button variant="outline" size="icon">
+            <Icons.hamburger className="h-6 w-6" />
+          </Button>
+        </PopoverTrigger>
+        <PopoverContent className="w-48">
+          {/* <div className="flex flex-col gap-4"> */}
+          {items?.length ? (
+            <div className="flex flex-col gap-6">
+              {itemsWithHome?.map(
+                (item, index) =>
+                  item.href && (
+                    <PopoverClose asChild>
+                      <Link
+                        key={index}
+                        href={item.href}
+                        className={cn(
+                          `flex items-center text-sm font-medium text-muted-foreground ${
+                            pathname === item.href ? "font-bold" : ""
+                          }`,
+                          item.disabled && "cursor-not-allowed opacity-80"
+                        )}
+                      >
+                        {item.title}
+                      </Link>
+                    </PopoverClose>
+                  )
+              )}
+            </div>
+          ) : null}
+          {/* </div> */}
+        </PopoverContent>
+      </Popover>
     </div>
   )
 }
