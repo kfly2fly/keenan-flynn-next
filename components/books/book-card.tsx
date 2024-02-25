@@ -20,7 +20,7 @@ interface BookCardProps {
   favorite: boolean
   bookclub: boolean
   rating: number
-  date_finished: string
+  date_finished: Date
   image: {
     coverImage: string
     imageAlt: string
@@ -60,7 +60,11 @@ export default function BookCard(book: BookCardProps) {
                 {book.author}
               </CardDescription>
               <CardDescription className="my-1 italic">
-                {book.date_finished}
+                {book?.date_finished.toLocaleString("en-US", {
+                  month: "long",
+                  day: "numeric",
+                  year: "numeric",
+                })}
               </CardDescription>
               <CardDescription>{book.description}</CardDescription>
             </div>

@@ -54,10 +54,14 @@ export default async function BookShowPage(props: BookShowPageProps) {
             </div>
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="font-md text-sm md:text-lg text-center md:text-left text-muted-foreground">
-                {book?.date_finished}
+                {book?.date_finished.toLocaleString("en-US", {
+                  month: "long",
+                  day: "numeric",
+                  year: "numeric",
+                })}
               </p>
               <Rating
-              className="pr-0 md:pr-16"
+                className="pr-0 md:pr-16"
                 name="read-only"
                 value={book?.rating}
                 precision={0.5}

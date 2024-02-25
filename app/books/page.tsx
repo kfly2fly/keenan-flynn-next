@@ -27,7 +27,7 @@ export default async function BookPage() {
           <div className="flex flex-col md:flex-row max-w-[700px] w-full justify-between items-center md:items-start gap-4 md:gap-0">
             <div className="flex flex-col max-w-[400px] gap-2 text-center md:text-start">
               <h1 className="text-xl md:text-4xl font-extrabold leading-tight text-accent-foreground tracking-tighter ">
-                Check out my book club!
+                Check out our book club!
               </h1>
               <p className="text-lg text-bold text-muted-foreground">
                 We meet twice a month to talk about fantasy, sci-fi, and other

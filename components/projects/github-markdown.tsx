@@ -31,7 +31,7 @@ export default async function GithubMarkdown(props: MarkdownProps) {
       >
         {terms}
       </ReactMarkdown>
-       <div>{terms}</div>
+       {/* <div>{terms}</div> */}
     </div>
   )
 }

@@ -20,7 +20,7 @@ interface ProjectCardProps {
   githubUrl: string
   hostedUrl: string | null
   markdownUrl: string
-  date_finished: string
+  date_finished: Date
   image: {
     screenshot: string
     imageAlt: string
@@ -38,11 +38,22 @@ export default function ProjectCard(project: ProjectCardProps) {
               {project.title}
             </CardTitle>
             <CardDescription className="my-1 italic">
-              {project.date_finished}
+              {project?.date_finished.toLocaleString("en-US", {
+                month: "long",
+                year: "numeric",
+              })}
             </CardDescription>
             <div className="flex flex-row gap-1">
               {project.skills.map((skill) => {
-                return <Badge key={skill} className="bg-accent hover:bg-muted" variant='secondary'>{skill}</Badge>
+                return (
+                  <Badge
+                    key={skill}
+                    className="bg-accent hover:bg-muted"
+                    variant="secondary"
+                  >
+                    {skill}
+                  </Badge>
+                )
               })}
             </div>
           </div>

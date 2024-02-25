@@ -1,19 +1,20 @@
 export const PROJECT_DATA = [
     {
-        title: "My first Flask website",
-        url: "flask-blog",
-        githubUrl: "https://github.com/kfly2fly/Flask-Web-Repo",
-        markdownUrl: "https://raw.githubusercontent.com/kfly2fly/Flask-Web-Repo/master/README.md",
-        hostedUrl: "https://flask-site-self.vercel.app/",
-        date_finished: "December 2020",
+        title: "KeenanFlynn.com",
+        url: "next-site",
+        githubUrl: "https://github.com/kfly2fly/keenan-flynn-next",
+        markdownUrl: "https://raw.githubusercontent.com/kfly2fly/keenan-flynn-next/master/README.md",
+        hostedUrl: null,
+        date_finished: new Date(2024, 1),
         image: {
-            screenshot: "/projects/flask-blog.png",
-            imageAlt: "A screenshot of my Flask Blog"
+            screenshot: "/projects/keenan-flynn-next.png",
+            imageAlt: "A screenshot of this website"
         },
+        
         skills: [
-            "Python",
-            "Flask",
-            "HTML",
+            "TypeScript",
+            "NextJS",
+            "Tailwind CSS",
         ]
     },
     {
@@ -22,7 +23,7 @@ export const PROJECT_DATA = [
         githubUrl: "https://github.com/kfly2fly/tunelink",
         markdownUrl: "https://raw.githubusercontent.com/kfly2fly/tunelink/master/README.md",
         hostedUrl: "https://tunelink-snowy.vercel.app/",
-        date_finished: "April 2022",
+        date_finished: new Date(2022, 3),
         image: {
             screenshot: "/projects/tunelink.png",
             imageAlt: "A screenshot of Tunelink"
@@ -35,21 +36,21 @@ export const PROJECT_DATA = [
         ]
     },
     {
-        title: "KeenanFlynn.com 2.0",
-        url: "next-site",
-        githubUrl: "https://github.com/kfly2fly/keenan-flynn-next",
-        markdownUrl: "https://raw.githubusercontent.com/kfly2fly/keenan-flynn-next/master/README.md",
-        hostedUrl: null,
-        date_finished: "February 2024",
+        title: "My first Flask website",
+        url: "flask-blog",
+        githubUrl: "https://github.com/kfly2fly/Flask-Web-Repo",
+        markdownUrl: "https://raw.githubusercontent.com/kfly2fly/Flask-Web-Repo/master/README.md",
+        hostedUrl: "https://flask-site-self.vercel.app/",
+        date_finished: new Date(2020, 11),
         image: {
-            screenshot: "/projects/keenan-flynn-next.png",
-            imageAlt: "A screenshot of this website"
+            screenshot: "/projects/flask-blog.png",
+            imageAlt: "A screenshot of my Flask Blog"
         },
-        
         skills: [
-            "TypeScript",
-            "NextJS",
-            "Tailwind CSS",
+            "Python",
+            "Flask",
+            "HTML",
         ]
-    }
+    },
+
 ]
