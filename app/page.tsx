@@ -82,7 +82,7 @@ export default function IndexPage() {
                 Hello World!
               </h1>
               <div className="text-lg text-bold text-muted-foreground">
-                I'm Keenan Flynn, a software engineer & aspiring entrepreneur.
+                I&apos;m Keenan Flynn, a software engineer & aspiring entrepreneur.
                 This website is a reflection of my career path and interests.
                 For more information feel free to connect with me on{" "}
                 <Link
