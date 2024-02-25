@@ -54,7 +54,10 @@ export default async function ProjectShowPage(props: ProjectShowPageProps) {
               {project?.title}
             </h1>
             <h3 className="font-semibold text-l md:text-2xl text-center md:text-left text-muted-foreground">
-              {project?.date_finished}
+              {project?.date_finished.toLocaleString("en-US", {
+                month: "long",
+                year: "numeric",
+              })}
             </h3>
             <div className="flex flex-row gap-2 my-2 justify-center md:justify-start">
               {project.skills.map((skill) => {

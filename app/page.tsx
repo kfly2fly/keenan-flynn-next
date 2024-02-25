@@ -27,7 +27,7 @@ export default function IndexPage() {
         <div className="container px-4 sm:px-16 grid items-center gap-6 pb-8 pt-6 md:py-10">
           <div className="flex flex-col gap-2 md:text-right">
             <h1 className="text-xl md:text-4xl font-extrabold leading-tight text-accent-foreground md:text-slate-900 tracking-tighter ">
-              Hello World!
+              Welcome to my webpage!
               <br className="inline" />
               Check out my latest below 😃
             </h1>
@@ -65,7 +65,7 @@ export default function IndexPage() {
           <div className="flex flex-col md:flex-row max-w-[700px] w-full justify-between items-center md:items-start gap-4 md:gap-0">
             <div className="flex flex-col gap-2 text-center md:text-start">
               <h1 className="text-lg md:text-2xl font-bold leading-tight text-accent-foreground tracking-tighter ">
-                Welcome!
+                Hello World!
               </h1>
               <div className="text-lg text-bold text-muted-foreground">
                 I'm Keenan Flynn, a software engineer & aspiring entrepreneur.

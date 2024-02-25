@@ -15,7 +15,7 @@ export const BOOK_DATA = [
     favorite: false,
     bookclub: false,
     rating: 3.5,
-    date_finished: "January 23, 2024",
+    date_finished: new Date(2024, 0, 23),
     image: {
       coverImage: "/books/talking-to-strangers-cover.jpg",
       imageAlt: "talking to strangers cover",
@@ -126,7 +126,7 @@ export const BOOK_DATA = [
     favorite: false,
     bookclub: false,
     rating: 3.5,
-    date_finished: "January 16, 2024",
+    date_finished: new Date(2024, 0, 16),
     image: {
       coverImage: "/books/the-martian.jpeg",
       imageAlt: "the martian cover",
@@ -150,7 +150,7 @@ export const BOOK_DATA = [
     favorite: true,
     bookclub: false,
     rating: 3.5,
-    date_finished: "January 10, 2024",
+    date_finished: new Date(2024, 0, 10),
     image: {
       coverImage: "/books/so-good-they-cant-ignore.jpg",
       imageAlt: "so good they can't ignore you cover",
@@ -341,7 +341,7 @@ export const BOOK_DATA = [
     favorite: false,
     bookclub: true,
     rating: 3.5,
-    date_finished: "January 3, 2024",
+    date_finished: new Date(2024, 0, 3),
     image: {
       coverImage: "/books/gates-of-fire.jpg",
       imageAlt: "gates of fire cover",
