@@ -14,6 +14,24 @@ import ProjectCard from "@/components/projects/project-card"
 import { BOOK_DATA } from "./books/book-data"
 import { PROJECT_DATA } from "./projects/project-data"
 
+const book_ref = BOOK_DATA.map(function (book) {
+  return { date_finished: book.date_finished, type: "book", url: book.url }
+})
+
+const project_ref = PROJECT_DATA.map(function (project) {
+  return {
+    date_finished: project.date_finished,
+    type: "project",
+    url: project.url,
+  }
+})
+
+const card_refs = [...book_ref, ...project_ref].sort(function compare(a, b) {
+  return (
+    new Date(b.date_finished).valueOf() - new Date(a.date_finished).valueOf()
+  )
+})
+
 export default function IndexPage() {
   return (
     <main className="w-full relative">
@@ -31,10 +49,6 @@ export default function IndexPage() {
               <br className="inline" />
               Check out my latest below 😃
             </h1>
-            {/* <p className="max-w-[700px] text-lg text-bold text-slate-900">
-              Accessible and customizable components that you can copy and paste
-              into your apps. Free. Open Source. And Next.js 13 Ready.
-            </p> */}
           </div>
           <div className="flex gap-4 md:justify-end">
             <Link
@@ -83,20 +97,20 @@ export default function IndexPage() {
           </div>
         </div>
         <div className="flex flex-auto flex-row flex-wrap w-full items-center justify-center gap-4">
-          {PROJECT_DATA.map((project) => {
-            return <ProjectCard {...project} key={project.url} />
+          {card_refs.map((card) => {
+            if (card.type === "book") {
+              const book = BOOK_DATA.find((b) => b.url === card.url)
+              if (book) {
+                return <BookCard {...book} key={book?.url} />
+              }
+            } else if (card.type === "project") {
+              const project = PROJECT_DATA.find((p) => p.url === card.url)
+              if (project) {
+                return <ProjectCard {...project} key={project.url} />
+              }
+            }
           })}
         </div>
-        {/* <div className="flex flex-auto flex-row flex-wrap w-fit items-center justify-center gap-4">
-          <CustomCard />
-          <CustomCard />
-          <CustomCard />
-          <CustomCard />
-          <CustomCard />
-          <CustomCard />
-          <CustomCard />
-          <CustomCard />
-        </div> */}
       </section>
       <div className="h-12" />
     </main>

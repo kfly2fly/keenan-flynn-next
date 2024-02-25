@@ -23,7 +23,7 @@ export const PROJECT_DATA = [
         githubUrl: "https://github.com/kfly2fly/tunelink",
         markdownUrl: "https://raw.githubusercontent.com/kfly2fly/tunelink/master/README.md",
         hostedUrl: "https://tunelink-snowy.vercel.app/",
-        date_finished: new Date(2023, 3),
+        date_finished: new Date(2022, 3),
         image: {
             screenshot: "/projects/tunelink.png",
             imageAlt: "A screenshot of Tunelink"
