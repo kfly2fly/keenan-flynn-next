@@ -1,19 +1,9 @@
 import Image from "next/image"
-import Link from "next/link"
-import { notFound } from "next/navigation"
-import * as actions from "@/actions"
-import db from "@/db"
 import { StarBorder } from "@mui/icons-material"
-import StarIcon from "@mui/icons-material/Star"
 import Rating from "@mui/material/Rating"
-import bookImg from "public/books/talking-to-strangers-cover.jpg"
 
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion"
+export const revalidate = 3600
+
 
 import { BOOK_DATA } from "../book-data"
 
