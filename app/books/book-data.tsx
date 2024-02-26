@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 
 import {
@@ -14,7 +15,7 @@ export const BOOK_DATA = [
     author: "Malcom Gladwell",
     favorite: false,
     bookclub: false,
-    rating: 3.5,
+    rating: 4,
     date_finished: new Date(2024, 0, 23),
     image: {
       coverImage: "/books/talking-to-strangers-cover.jpg",
@@ -27,18 +28,18 @@ export const BOOK_DATA = [
         <p>
           I began this book at the turn of the new year. 2024 had just arrived,
           and like many others I wanted to start off the year on a productive
-          note. &quot;Learning some new communication skills might be intriguing&quot; I
-          thought. So after finishing this book, how many new ways did I learn
-          to talk to strangers? None. But that&apos;s okay.
+          note. &quot;Learning some new communication skills might be
+          intriguing&quot; I thought. So after finishing this book, how many new
+          ways did I learn to talk to strangers? None. But that&apos;s okay.
         </p>
         <p>
           This book is really about the contract we engage in when talking to
           new people. Malcolm Gladwell takes a deep dive into the question of
-          &quot;Why (and how) do things go wrong when we talk to strangers&quot;. He
-          begins and ends the book with an examination of an encounter between a
-          black woman and police officer. What should have been a simple traffic
-          stop snowballs after misunderstandings accumulate into the death of
-          the woman, Sandra Bland.
+          &quot;Why (and how) do things go wrong when we talk to
+          strangers&quot;. He begins and ends the book with an examination of an
+          encounter between a black woman and police officer. What should have
+          been a simple traffic stop snowballs after misunderstandings
+          accumulate into the death of the woman, Sandra Bland.
         </p>
         <p>
           So why did this happen. Gladwell hands us several key insights that
@@ -53,14 +54,15 @@ export const BOOK_DATA = [
               What do we do when talking to someone for the first time? We
               believe them. Our immediate assumption is that the person in front
               of us is telling the truth. Things can go wrong though. Fidel
-              Castro&apos;s spies fooled the CIA. Bernie Madoff swindled billions of
-              dollars. Why? Because we have a default to truth. For a select
-              few, this trait is recessive. These are the whistleblowers of the
-              world, historically characterized as prophets. But while we want
-              to be on the lookout for liars and cheats that would take
-              advantage of our trustingness, Gladwell firmly states that trust
-              between strangers is evolutionary. It&apos;s something that has allowed
-              us to build modern civilization.
+              Castro&apos;s spies fooled the CIA. Bernie Madoff swindled
+              billions of dollars. Why? Because we have a default to truth. For
+              a select few, this trait is recessive. These are the
+              whistleblowers of the world, historically characterized as
+              prophets. But while we want to be on the lookout for liars and
+              cheats that would take advantage of our trustingness, Gladwell
+              firmly states that trust between strangers is evolutionary.
+              It&apos;s something that has allowed us to build modern
+              civilization.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
@@ -70,8 +72,8 @@ export const BOOK_DATA = [
               murder case. So how did she become the prime suspect? The problem
               is that we judge the way someone is acting to be inline with how
               they are inside. Did Amanda Know care that her roommate was
-              murdered? Surely. But she didn&apos;t show sadness on the outside, she
-              showed humor during the investigation. We assume people are
+              murdered? Surely. But she didn&apos;t show sadness on the outside,
+              she showed humor during the investigation. We assume people are
               transparent, that their actions act as a window into their soul,
               and this is a stereotype. We are all guilty of this kind of
               stereotyping. Gladwell says this is necessary in fact, but also
@@ -81,10 +83,10 @@ export const BOOK_DATA = [
           <AccordionItem value="item-3">
             <AccordionTrigger>Mismatching</AccordionTrigger>
             <AccordionContent className="text-muted-foreground">
-              Mismatching is when someone&apos;s honesty does not match the way they
-              look. To explain, Gladwell spends a considerable portion of the
-              book talking about alcohol. Alcohol means something different for
-              different cultures, yet it always leads to myopia. Myopia is
+              Mismatching is when someone&apos;s honesty does not match the way
+              they look. To explain, Gladwell spends a considerable portion of
+              the book talking about alcohol. Alcohol means something different
+              for different cultures, yet it always leads to myopia. Myopia is
               failure to consider long-term consequences. College drinking
               culture in the US is a particular interest to Gladwell,
               specifically the case of Brock Turner. In the famous rape case,
@@ -109,12 +111,12 @@ export const BOOK_DATA = [
         <p>
           This book was fascinating whirlwind through extreme social encounters
           that paint a picture of what happened to Sandra Bland. Gladwell closes
-          by demonstrating how each factor contributed to Sandra&apos;s death. &quot;But
-          far more important than a little grace and humility over what we
-          cannot do, we should be clear about what we can do... There are clues
-          to making sense of the stranger. But attending to them requires
-          humility and thoughtfulness and a willingness to look beyond the
-          stranger, and take time and place and context into account.
+          by demonstrating how each factor contributed to Sandra&apos;s death.
+          &quot;But far more important than a little grace and humility over
+          what we cannot do, we should be clear about what we can do... There
+          are clues to making sense of the stranger. But attending to them
+          requires humility and thoughtfulness and a willingness to look beyond
+          the stranger, and take time and place and context into account.
         </p>
       </>
     ),
@@ -125,7 +127,7 @@ export const BOOK_DATA = [
     author: "Andy Weir",
     favorite: false,
     bookclub: false,
-    rating: 3.5,
+    rating: 4.5,
     date_finished: new Date(2024, 0, 16),
     image: {
       coverImage: "/books/the-martian.jpeg",
@@ -134,13 +136,83 @@ export const BOOK_DATA = [
     description:
       "This is one that I've been putting off for a while. It's not my first Andy Weir book. We read Project Hail Mary in our book club : (link). That book was a far-fetched scientific thriller with a big infusion of the classic alien encounter. I ate it up. I love that stuff. I could just never bring myself to pick up The Martian. Perhaps because it's too close to reality (I saw the movie I read the book.. rookie mistake). Perhaps because I thought there wouldn't be any surprises (there are).",
     summary: (
-      <p>
-        I began this book at the turn of the new year. 2024 had just arrived,
-        and like many others I wanted to start off the year on a productive
-        note. &quot;Learning some new communication skills might be intriguing&quot; I
-        thought. So after finishing this book, how many new ways did I learn to
-        talk to strangers? None. But that&apos;s okay.
-      </p>
+      <>
+        <div>
+          This is one that I&apos;ve been putting off for a while. It&apos;s not my first
+          Andy Weir book. I read Project Hail Mary as part of{" "}
+          <Link
+            href="https://skybone11.wixsite.com/opussodalicium/blank-page-11"
+            className="text-muted-foreground underline underline-offset-2"
+          >
+            Opus Sodalicum
+          </Link>
+          , a book club that I&apos;m a part of. Project Hail Mary was a far-fetched
+          scientific thriller with a big infusion of the classic alien
+          encounter. I ate it up. I love that stuff. I could just never bring
+          myself to pick up The Martian. Perhaps because it never had the
+          futuristic sci-fi flare that franchises like Dune have. I also saw the
+          movie before I read the book.. rookie mistake. Perhaps because I
+          thought there wouldn&apos;t be any surprises (...there are).
+        </div>
+        <p>
+          I finished this book in less than a week. It&apos;s not short. It&apos;s just
+          addicting. The science. The people. The hope. The despair. There&apos;s
+          both scientific action sequences and quiet moments in which Weir deep
+          dives into the emotions of someone who is alone on an entire planet.
+          There&apos;s also the humor. I found myself laughing out loud several
+          times. There&apos;s just something hilarious about Mark Watney&apos;s dry, crude
+          humor in the face of crazy circumstances. The movie definitely ripped
+          some jokes word-for-word, but there&apos;s a lot they left out.
+        </p>
+        <p>
+          The bits and drops of scientific lore and discovery are like a
+          dopamine hit. Weir makes the story accessible. Not everyone can be a
+          rocket scientist and a botanist like Mark Watney, but there aren&apos;t a
+          lot of prerequisites needed to enjoy the book. Even if you don&apos;t
+          understand all the science (I didn&apos;t), you still understand the
+          consequences and risk of every action. That fact makes this a good
+          jumping off point into the sci-fi genre as a whole.
+        </p>
+        <div>
+          The book is also an examination of loneliness through unprecedented
+          circumstances. I know it&apos;s a just fictional story, but there&apos;s a lot
+          to take away when it comes to mental health. And it&apos;s these moments
+          that really make the book shine. The odds are never in Watney&apos;s favor,
+          but he forges ahead with hard work. I read this book in parallel with{" "}
+          <Link
+            href={"/books/so-good-they-cant-ignore-you"}
+            className="text-muted-foreground underline underline-offset-2"
+          >
+            &apos;Be So Good They Can&apos;t Ignore You&apos;
+          </Link>{" "}
+          by Cal Newport. The 2 books are on complete opposite ends of the
+          spectrum. But they do share 1 message: resilience and resourcefulness
+          is essential in the face of challenging circumstances.
+        </div>
+        <div>
+          Overall this book was great. Space exploration, science, hard work,
+          hope, humor. Weir blends them all into a story that&apos;s engaging from
+          the first to the last chapter.
+        </div>
+        <div className="mt-3 text-lg">Bonus pic 📷</div>
+        <div className="text-muted-foreground">
+          This visual descriptions in this book reminded me a lot of my trip to
+          Iceland. In particular, it&apos;s reminiscent the day that we spent at
+          Landmannalaugar hiking rusty colored slopes and lava fields.
+        </div>
+        <div className="flex flex-col items-center gap-2">
+          <div className="text-sm text-muted-foreground">
+            My friends Logan Wells (left), Dylan Crow (right), and me (middle) at
+            Landmannalauger
+          </div>
+          <Image
+            src="/books/landmannalauger.jpg"
+            alt="Pic of me and friends at landmannalauger"
+            width={2049}
+            height={1536}
+          />
+        </div>
+      </>
     ),
   },
   {
@@ -149,7 +221,7 @@ export const BOOK_DATA = [
     author: "Cal Newport",
     favorite: true,
     bookclub: false,
-    rating: 3.5,
+    rating: 5,
     date_finished: new Date(2024, 0, 10),
     image: {
       coverImage: "/books/so-good-they-cant-ignore.jpg",
@@ -161,19 +233,14 @@ export const BOOK_DATA = [
     summary: (
       <>
         <p>
-          It&apos;s been a long time since I&apos;ve read a book that really made me think
-          like this one. Cal Newport essentially deconstructs the idea of
-          &quot;Follow Your Passion&quot;. In fact, he emphatically supports the idea of
-          NOT following your passion. This is an extreme view on the age old
-          adage, and it would be pretty demoralizing if that was all this book
-          is about. Luckily for us Newport offers some advice. In particular, he
-          addresses what really makes a standout career.
+          It&apos;s been a long time since I&apos;ve read a book that really
+          made me think like this one. Cal Newport essentially deconstructs the
+          idea of &quot;Follow Your Passion&quot;. In fact, he emphatically
+          supports the idea of NOT following your passion. This is an extreme
+          view on the age old adage, and it would be pretty demoralizing if that
+          was all this book is about. Luckily for us Newport offers some advice.
+          In particular, he addresses what really makes a standout career.
         </p>
-
-        {/* <p>
-          Software engineer product and living on own. Law of Financial
-          viability. Illusions of striking it on your own and living off
-        </p> */}
         <p>
           Newport lays out his thesis through a series of rules. Here&apos;s a
           summary.
@@ -185,25 +252,26 @@ export const BOOK_DATA = [
             </AccordionTrigger>
             <AccordionContent className="text-muted-foreground ml-4 space-y-2">
               <p>
-                Okay, I know what you&apos;re thinking. Passion for your career is
-                essential for making it last right? You&apos;d be correct, so we need
-                to be more precise.
+                Okay, I know what you&apos;re thinking. Passion for your career
+                is essential for making it last right? You&apos;d be correct, so
+                we need to be more precise.
               </p>
               <p>
                 In 2005, Steve Jobs gave a famous speech at Stanford where his
-                core message was to &quot;follow your dreams&quot;. Newport defines this
-                popular piece of career advice in the
+                core message was to &quot;follow your dreams&quot;. Newport
+                defines this popular piece of career advice in the
                 <span className="text-primary"> Passion Hypothesis.</span>
               </p>
               <p className="px-4 py-2 border-s-4 border-gray-500 bg-gray-800 text-accent-foreground italic">
-              &quot;The key to occupational happiness is to first figure out what
-                you&apos;re passionate about and then find a job that matches this
-                passion.&quot;
+                &quot;The key to occupational happiness is to first figure out
+                what you&apos;re passionate about and then find a job that
+                matches this passion.&quot;
               </p>
               <p>
-                Newport argues this piece of advice isn&apos;t particularly useful
-                and that we <span className="italic">shouldn&apos;t </span> follow
-                our passion in our initial career. Examining several studies,
+                Newport argues this piece of advice isn&apos;t particularly
+                useful and that we{" "}
+                <span className="italic">shouldn&apos;t </span> follow our
+                passion in our initial career. Examining several studies,
                 Newport points out that passion takes time. Passion is a side
                 effect of mastery over your focus domain. He further states that
                 the <span className="text-primary">Passion Hypothesis</span> can
@@ -282,8 +350,9 @@ export const BOOK_DATA = [
                   Trap #2: The point at which you have acquired enough
                   <span className="text-primary"> Career Capital</span> to get
                   meaningful control over your working life is exactly the point
-                  when you&apos;ve become valuable enough to your current employer
-                  that they will try to prevent you from making the change.
+                  when you&apos;ve become valuable enough to your current
+                  employer that they will try to prevent you from making the
+                  change.
                 </p>
                 <p>
                   To help us avoid these traps, Newport gives us the
@@ -292,7 +361,8 @@ export const BOOK_DATA = [
                     Law of Financial Viability
                   </span>
                   , which says that we should only make a bid for more control
-                  when there&apos;s evidence that people are willing to pay you for.
+                  when there&apos;s evidence that people are willing to pay you
+                  for.
                 </p>
               </div>
             </AccordionContent>
@@ -309,11 +379,12 @@ export const BOOK_DATA = [
                 control, mission is a rare and valuable trait that can be
                 attained by having enough
                 <span className="text-primary"> Career Capital</span>. We
-                shouldn&apos;t neccesarily worry if a mission doesn&apos;t make itself
-                immediately apparent. A mission is similar to a scientific
-                breakthrough, it&apos;s an innovation waiting to be discovered. There
-                has been no scientific breakthrough that didn&apos;t require previous
-                insights. These are what Newport calls
+                shouldn&apos;t neccesarily worry if a mission doesn&apos;t make
+                itself immediately apparent. A mission is similar to a
+                scientific breakthrough, it&apos;s an innovation waiting to be
+                discovered. There has been no scientific breakthrough that
+                didn&apos;t require previous insights. These are what Newport
+                calls
                 <span className="text-primary"> Little Bets</span>, we build up
                 to a mission through incremental steps. Eventually, these
                 <span className="italic"> Little Bets</span> will accumulate
@@ -325,10 +396,10 @@ export const BOOK_DATA = [
         <p>
           This book stuck out to me not because of controversial theme, but
           because of the hope I am filled with after reading it. There is so
-          much that we can achieve in life, and there&apos;s no easy way to do it. It
-          all comes down to Career Capital. Results may not be instant, but
-          every action spurs momentum towards a higher ideal. That&apos;s a message I
-          can support.
+          much that we can achieve in life, and there&apos;s no easy way to do
+          it. It all comes down to Career Capital. Results may not be instant,
+          but every action spurs momentum towards a higher ideal. That&apos;s a
+          message I can support.
         </p>
       </>
     ),
@@ -340,7 +411,7 @@ export const BOOK_DATA = [
     author: "Steven Pressfield",
     favorite: false,
     bookclub: true,
-    rating: 3.5,
+    rating: 4.5,
     date_finished: new Date(2024, 0, 3),
     image: {
       coverImage: "/books/gates-of-fire.jpg",
@@ -352,9 +423,9 @@ export const BOOK_DATA = [
       <p>
         I began this book at the turn of the new year. 2024 had just arrived,
         and like many others I wanted to start off the year on a productive
-        note. &quot;Learning some new communication skills might be intriguing&quot; I
-        thought. So after finishing this book, how many new ways did I learn to
-        talk to strangers? None. But that&apos;s okay.
+        note. &quot;Learning some new communication skills might be
+        intriguing&quot; I thought. So after finishing this book, how many new
+        ways did I learn to talk to strangers? None. But that&apos;s okay.
       </p>
     ),
   },
