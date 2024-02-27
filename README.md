@@ -1,4 +1,4 @@
-# Keenan's Next Webapp
+# Keenan's NextJS Webapp
 
 This webapp is a learning experimentation with modern web frameworks. The app uses NextJS as it's backbone and helped me become proficient with TypeScript programming. You can use the app to learn a little bit more about me and what I'm interested in! 
 
