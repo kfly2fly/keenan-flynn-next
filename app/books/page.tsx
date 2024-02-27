@@ -3,12 +3,11 @@ import Link from "next/link"
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { Button, buttonVariants } from "@/components/ui/button"
+import BookCard from "@/components/books/book-card"
 import Hero from "@/components/books/book-hero"
-
 import { BookIcon } from "@/components/icons"
 
 import { BOOK_DATA } from "./book-data"
-import BookCard from "@/components/books/book-card"
 
 export default async function BookPage() {
   return (
@@ -30,7 +29,7 @@ export default async function BookPage() {
                 Check out our book club!
               </h1>
               <p className="text-lg text-bold text-muted-foreground">
-                We meet twice a month to talk about fantasy, sci-fi, and other
+                Friends and I meet to talk about fantasy, sci-fi, and other
                 fiction!
               </p>
             </div>
@@ -54,9 +53,7 @@ export default async function BookPage() {
         </div>
         <div className="flex flex-auto flex-row flex-wrap w-full items-center justify-center gap-4">
           {BOOK_DATA.map((book) => {
-            return (
-              <BookCard {...book} key={book.url}/>
-            )
+            return <BookCard {...book} key={book.url} />
           })}
         </div>
       </section>
