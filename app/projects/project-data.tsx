@@ -2,6 +2,7 @@ export const PROJECT_DATA = [
     {
         title: "KeenanFlynn.com",
         url: "next-site",
+        description: "My personal website built with NextJS and TailwindCSS",
         githubUrl: "https://github.com/kfly2fly/keenan-flynn-next",
         markdownUrl: "https://raw.githubusercontent.com/kfly2fly/keenan-flynn-next/master/README.md",
         hostedUrl: null,
@@ -15,11 +16,13 @@ export const PROJECT_DATA = [
             "TypeScript",
             "NextJS",
             "Tailwind CSS",
+            "OAuth",
         ]
     },
     {
         title: "Tunelink",
         url: "tunelink",
+        description: "A class project that finds music events in your area based on Spotify preference",
         githubUrl: "https://github.com/kfly2fly/tunelink",
         markdownUrl: "https://raw.githubusercontent.com/kfly2fly/tunelink/master/README.md",
         hostedUrl: "https://tunelink-snowy.vercel.app/",
@@ -33,11 +36,13 @@ export const PROJECT_DATA = [
             "Javascript",
             "Angular",
             "Rest APIs",
+            "Spotify",
         ]
     },
     {
         title: "My first Flask website",
         url: "flask-blog",
+        description: "An HTML site with a Python-Flask backend. My first experience with web design",
         githubUrl: "https://github.com/kfly2fly/Flask-Web-Repo",
         markdownUrl: "https://raw.githubusercontent.com/kfly2fly/Flask-Web-Repo/master/README.md",
         hostedUrl: "https://flask-site-self.vercel.app/",
@@ -50,6 +55,7 @@ export const PROJECT_DATA = [
             "Python",
             "Flask",
             "HTML",
+            "Bootstrap"
         ]
     },
 

@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 
+import { siteConfig } from "@/config/site"
 import {
   Accordion,
   AccordionContent,
@@ -138,47 +139,49 @@ export const BOOK_DATA = [
     summary: (
       <>
         <div>
-          This is one that I&apos;ve been putting off for a while. It&apos;s not my first
-          Andy Weir book. I read Project Hail Mary as part of{" "}
+          This is one that I&apos;ve been putting off for a while. It&apos;s not
+          my first Andy Weir book. I read Project Hail Mary as part of{" "}
           <Link
             href="https://skybone11.wixsite.com/opussodalicium/blank-page-11"
             className="text-muted-foreground underline underline-offset-2"
           >
             Opus Sodalicum
           </Link>
-          , a book club that I&apos;m a part of. Project Hail Mary was a far-fetched
-          scientific thriller with a big infusion of the classic alien
-          encounter. I ate it up. I love that stuff. I could just never bring
-          myself to pick up The Martian. Perhaps because it never had the
+          , a book club that I&apos;m a part of. Project Hail Mary was a
+          far-fetched scientific thriller with a big infusion of the classic
+          alien encounter. I ate it up. I love that stuff. I could just never
+          bring myself to pick up The Martian. Perhaps because it never had the
           futuristic sci-fi flare that franchises like Dune have. I also saw the
           movie before I read the book.. rookie mistake. Perhaps because I
           thought there wouldn&apos;t be any surprises (...there are).
         </div>
         <p>
-          I finished this book in less than a week. It&apos;s not short. It&apos;s just
-          addicting. The science. The people. The hope. The despair. There&apos;s
-          both scientific action sequences and quiet moments in which Weir deep
-          dives into the emotions of someone who is alone on an entire planet.
-          There&apos;s also the humor. I found myself laughing out loud several
-          times. There&apos;s just something hilarious about Mark Watney&apos;s dry, crude
-          humor in the face of crazy circumstances. The movie definitely ripped
-          some jokes word-for-word, but there&apos;s a lot they left out.
+          I finished this book in less than a week. It&apos;s not short.
+          It&apos;s just addicting. The science. The people. The hope. The
+          despair. There&apos;s both scientific action sequences and quiet
+          moments in which Weir deep dives into the emotions of someone who is
+          alone on an entire planet. There&apos;s also the humor. I found myself
+          laughing out loud several times. There&apos;s just something hilarious
+          about Mark Watney&apos;s dry, crude humor in the face of crazy
+          circumstances. The movie definitely ripped some jokes word-for-word,
+          but there&apos;s a lot they left out.
         </p>
         <p>
           The bits and drops of scientific lore and discovery are like a
           dopamine hit. Weir makes the story accessible. Not everyone can be a
-          rocket scientist and a botanist like Mark Watney, but there aren&apos;t a
-          lot of prerequisites needed to enjoy the book. Even if you don&apos;t
-          understand all the science (I didn&apos;t), you still understand the
-          consequences and risk of every action. That fact makes this a good
-          jumping off point into the sci-fi genre as a whole.
+          rocket scientist and a botanist like Mark Watney, but there
+          aren&apos;t a lot of prerequisites needed to enjoy the book. Even if
+          you don&apos;t understand all the science (I didn&apos;t), you still
+          understand the consequences and risk of every action. That fact makes
+          this a good jumping off point into the sci-fi genre as a whole.
         </p>
         <div>
           The book is also an examination of loneliness through unprecedented
-          circumstances. I know it&apos;s a just fictional story, but there&apos;s a lot
-          to take away when it comes to mental health. And it&apos;s these moments
-          that really make the book shine. The odds are never in Watney&apos;s favor,
-          but he forges ahead with hard work. I read this book in parallel with{" "}
+          circumstances. I know it&apos;s a just fictional story, but
+          there&apos;s a lot to take away when it comes to mental health. And
+          it&apos;s these moments that really make the book shine. The odds are
+          never in Watney&apos;s favor, but he forges ahead with hard work. I
+          read this book in parallel with{" "}
           <Link
             href={"/books/so-good-they-cant-ignore-you"}
             className="text-muted-foreground underline underline-offset-2"
@@ -191,8 +194,8 @@ export const BOOK_DATA = [
         </div>
         <div>
           Overall this book was great. Space exploration, science, hard work,
-          hope, humor. Weir blends them all into a story that&apos;s engaging from
-          the first to the last chapter.
+          hope, humor. Weir blends them all into a story that&apos;s engaging
+          from the first to the last chapter.
         </div>
         <div className="mt-3 text-lg">Bonus pic 📷</div>
         <div className="text-muted-foreground">
@@ -202,8 +205,8 @@ export const BOOK_DATA = [
         </div>
         <div className="flex flex-col items-center gap-2">
           <div className="text-sm text-muted-foreground">
-            My friends Logan Wells (left), Dylan Crow (right), and me (middle) at
-            Landmannalauger
+            My friends Logan Wells (left), Dylan Crow (right), and me (middle)
+            at Landmannalauger
           </div>
           <Image
             src="/books/landmannalauger.jpg"
@@ -420,13 +423,80 @@ export const BOOK_DATA = [
     description:
       "Ok this novel was just badass. It was brutal, beautiful, and satisfying story telling. Steven Pressfield paints a vivid story of ancient Greece during the time of King Leonidas and the 300 Spartans. There's a lot of details about this story that the ancient historians left out, and Pressfield takes the artistic liberty of filling in these gaps.",
     summary: (
-      <p>
-        I began this book at the turn of the new year. 2024 had just arrived,
-        and like many others I wanted to start off the year on a productive
-        note. &quot;Learning some new communication skills might be
-        intriguing&quot; I thought. So after finishing this book, how many new
-        ways did I learn to talk to strangers? None. But that&apos;s okay.
-      </p>
+      <>
+        <div>
+          Ok this novel was just badass. It was brutal, beautiful, and
+          satisfying story telling. Steven Pressfield paints a vivid story of
+          ancient Greece during the time of King Leonidas and the 300 Spartans.
+          There&apos;s a lot of details about this story that the ancient
+          historians left out, and Pressfield takes the artistic liberty of
+          filling in these gaps.
+        </div>
+        <div>
+          This is a book I read for my book club Opus Sodalicum. Check it out{" "}
+          <Link
+            href={siteConfig.links.bookclub}
+            className="text-muted-foreground underline underline-offset-2"
+          >
+            here
+          </Link>
+          .
+        </div>
+        <div>
+          Following the life of a fictional battle squire names Xeones, we are
+          plunged into the polis of Sparta. Early on we are told that Xeones is
+          the sole survivor of the battle of Thermopylae and has been captured
+          by the Persians. King Xerxes, just like millions of people to come, is
+          fascinated by the strength, resilience, and sacrifice of the
+          &quot;300&quot; Spartans. (The total number was more like 1,000. There
+          300 Spartan &qot;Peers&quot;). So Xeones is brought before Xerxes and
+          told to tell his story. Xeones, a firm believer in the gods, thinks
+          that he has been saved by Apollo Farstriker so that he can tell his
+          story and honor the legacy of the Spartans.
+        </div>
+        <div>
+          Xeones is not a true Spartan himself, he found refuge in the city only
+          after a childhood of grief, desperation, and lost love. In Sparta he
+          finds a brutal society, but also a community that is so bonded
+          together you can&apos;t help but be drawn to the characters. The
+          people are a mix of ancient prejudices and historic virtues, but as a
+          whole they represent a society with a singular, almost divine sight.
+          You can certainly say that Pressfield romanticizes the Spartans in the
+          novel, but I don&apos;t think that&apos;s a bad thing. (He certainly
+          wouldn&apos;t be the only historian to do so).
+        </div>
+        <div>
+          One thing that I thought Pressfield did well was how he highlighted
+          masculinity vs femineity. There&apos;s obviously a lot of masculinity
+          in the book. There&apos;s also a lot of strength that the Spartans
+          draw from women. The women form the backbone of the society. They are
+          the ones that have to bear the weight of war the most, as they lose
+          fathers, husbands, and children. A quote from Leonidas illustrates
+          this well when he is asked why he chose the 300 Spartan Peers that
+          would march to their death.
+        </div>
+        <div className="px-4 py-2 border-s-4 border-gray-500 bg-gray-800 text-accent-foreground italic">
+          &quot;I chose them not for their own value… but for that of their
+          women.&quot;
+        </div>
+        <div>
+          I really appreciates the blend of fiction and fantasy in this book.
+          There are remnants of reality that have been left to us by Herodotus
+          and others, and Pressfield takes full advantage. Multiple times I
+          found myself picking up my phone and going down the Wikipedia rabbit
+          hole, which just goes to show how much research Pressfield did for
+          this novel.
+        </div>
+        <div>
+          Growing up, I spent a sizable amount of time learning about Greek
+          mythology. As a boy, stories like this captured my imagination.
+          Multiple times I found myself reminiscing about how my dad and I would
+          watch the History Channel when I was younger. We would watch shows
+          about things like the Battle of Thermopylae. Now as a grown adult,
+          Xeones&apos; story has done the same thing. I look forward to reading
+          more from Pressfield in the future.
+        </div>
+      </>
     ),
   },
 ] as const

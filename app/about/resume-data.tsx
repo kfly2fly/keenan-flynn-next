@@ -67,7 +67,7 @@ export const RESUME_DATA = {
   ],
   work: [
     {
-      company: "Honeywell Federal Manufacturing & Technology",
+      company: "Honeywell FM&T",
       link: "https://kcnsc.doe.gov/",
       badges: ["Q clearance"],
       title: "Software Engineer",

@@ -17,6 +17,7 @@ import { Badge, badgeVariants } from "../ui/badge"
 interface ProjectCardProps {
   title: string
   url: string
+  description: string
   githubUrl: string
   hostedUrl: string | null
   markdownUrl: string
