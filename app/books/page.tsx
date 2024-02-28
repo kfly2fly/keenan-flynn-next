@@ -22,7 +22,7 @@ export default async function BookPage() {
         <div className="container flex items-center py-10">
           <div className="flex flex-col gap-2">
             <h1 className="text-xl md:text-4xl font-extrabold leading-tight text-accent-foreground bg-accent p-3 rounded-lg tracking-tighter ">
-              Here's what I've been reading! 📚
+              Here&apos;s what I&apos;ve been reading! 📚
             </h1>
           </div>
         </div>
