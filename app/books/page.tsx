@@ -19,14 +19,20 @@ export default async function BookPage() {
         width={3700}
         height={1200}
       >
-        <></>
+        <div className="container flex items-center py-10">
+          <div className="flex flex-col gap-2">
+            <h1 className="text-xl md:text-4xl font-extrabold leading-tight text-accent-foreground bg-accent p-3 rounded-lg tracking-tighter ">
+              Here's what I've been reading! 📚
+            </h1>
+          </div>
+        </div>
       </Hero>
       <section className="container mx-auto relative m-4">
         <div className="flex w-full justify-center mb-4">
           <div className="flex flex-col md:flex-row max-w-[700px] w-full justify-between items-center md:items-start gap-4 md:gap-0">
             <div className="flex flex-col max-w-[400px] gap-2 text-center md:text-start">
               <h1 className="text-xl md:text-4xl font-extrabold leading-tight text-accent-foreground tracking-tighter ">
-                Check out our book club!
+                Also check out our book club!
               </h1>
               <p className="text-lg text-bold text-muted-foreground">
                 Friends and I meet to talk about fantasy, sci-fi, and other
