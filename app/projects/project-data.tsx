@@ -26,7 +26,7 @@ export const PROJECT_DATA = [
         githubUrl: "https://github.com/kfly2fly/tunelink",
         markdownUrl: "https://raw.githubusercontent.com/kfly2fly/tunelink/master/README.md",
         hostedUrl: "https://tunelink-snowy.vercel.app/",
-        date_finished: new Date(2022, 3),
+        date_finished: new Date(2022, 4),
         image: {
             screenshot: "/projects/tunelink.png",
             imageAlt: "A screenshot of Tunelink"
@@ -56,6 +56,25 @@ export const PROJECT_DATA = [
             "Flask",
             "HTML",
             "Bootstrap"
+        ]
+    },
+    {
+        title: "DL Quote Generator",
+        url: "quote-gen",
+        description: "An LSTM Deep Learning model that produces quotes by a fictional person. Includes HTML frontend with a Python-Flask backend.",
+        githubUrl: "https://github.com/kfly2fly/PyDLQuotesProj",
+        markdownUrl: "https://raw.githubusercontent.com/kfly2fly/PyDLQuotesProj/main/README.md",
+        hostedUrl: null,
+        date_finished: new Date(2022, 3),
+        image: {
+            screenshot: "/projects/public/input.png",
+            imageAlt: "A screenshot of the DL quote gen app"
+        },
+        skills: [
+            "Python",
+            "Generative",
+            "LSTM",
+            "Flask",
         ]
     },
 
