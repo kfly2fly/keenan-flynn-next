@@ -131,7 +131,7 @@ export default function IndexPage() {
             </Link>
             <div className="flex flex-row flex-wrap  items-center justify-center gap-4">
               {PROJECT_DATA.map((project, i) => {
-                if (i < 3) {
+                if (i < 6) {
                   return <ProjectCard {...project} key={project.url} />
                 }
               })}
@@ -149,7 +149,7 @@ export default function IndexPage() {
             </Link>
             <div className="flex flex-row flex-wrap  items-center justify-center gap-4">
               {sortedBooks.map((bookRef, i) => {
-                if (i < 3) {
+                if (i < 6) {
                   const book = BOOK_DATA.find((b) => b.url === bookRef.url)
                   if (book) return <BookCard {...book} key={book.url} />
                 }
