@@ -11,6 +11,164 @@ import {
 
 export const BOOK_DATA = [
   {
+    title: "Wool",
+    url: "wool",
+    author: "Hugh Howey",
+    favorite: false,
+    bookclub: false,
+    rating: 4.0,
+    date_finished: new Date(2024, 4, 5),
+    image: {
+      coverImage: "/books/wool.jfif",
+      imageAlt: "wool cover",
+    },
+    description:
+      'Wool. I picked up this book after watching Apple TVs dystopian, neo-noir thriller "Silo". A story about inhabitants in a ruined world living in an underground bunker called… The Silo. The story reminds me so much of the video game Fallout. Hours upon hours I dedicated to that game, feeling fully immersed by the world building, characters, and Atom Punk genre. I think this connection was one of the reasons why Wool was able to suck me in.',
+    summary: (
+      <>
+        <p>
+          Wool. I picked up this book after watching the dystopian, neo-noir
+          thriller &quot;Silo&quot; on Apple TV. It&apos;s a story about
+          inhabitants of a ruined world living in an underground bunker called…
+          The Silo. To me the story is heavily reminiscent of the video game
+          Fallout. As a teenager I sunk hours upon hours into that game, feeling
+          deeply immersed by the world building, characters, and Atom Punk
+          genre. That connection was a major reason Wool was able to suck me in.
+        </p>
+        <p>
+          Having watched the show before reading the book I had some high hopes.
+          The show did such a good job with{" "}
+          <span className="italic">theming</span> which made reading the book
+          really easy to visualize. One of the best things about the book is the
+          immersion. The world feels lived in. Though it&apos;s fiction, it
+          feels realistic. It&apos;s easy to see how a chain of events could
+          lead to something like the Silo existing. The people and characters
+          feel motivated. We get a lot of POVs in this book from both main
+          characters and side characters, and even though the POV jumps the plot
+          continues to flow easily.
+        </p>
+        <p>
+          To be clear the book is not perfect. A reader can tell that this is
+          Hugh Howey&apos;s first book. The first 150 pages are especially rough
+          around the edges, with overly complex dialogue and descriptions. I
+          also found the villain to be a bit weak in his motivation. At times it
+          felt like there were villainous actions just for the sake of being
+          evil. Towards the end of the book we get a bit of justification for
+          the big bad guy but it&apos;s still a bit hard to fully rationalize.
+        </p>
+        <p>
+          A big surprise to me was that the full season of the TV show (10
+          hours) only covered 200 pages of the book. That&apos;s less than half
+          of the total 500. The second half of the book is much better than the
+          first, so I found myself questioning why the show really shined. I
+          think the show really deserves some credit for taking the time to
+          flesh out the world, something that wasn&apos;t missing from the book
+          but could have been improved nonetheless. Little backstories, side
+          plots, new characters all filled in the gaps. This is really a rare
+          thing in today&apos; television where producers are looking for the
+          big shock value plot points. But what makes those plot points shocking
+          is the methodical build up of tension. I believe that&apos;s why so
+          many people argue that &quot;the book is better&quot; when talking
+          about their favorite franchise. Books just have more time to be
+          methodical. Only in the case of Wool and Silo it&apos;s flipped.
+        </p>
+        <p>
+          What makes me really excited for the future of the TV and book series
+          is that Hugh Howey made BIG improvements as the book went on. Consider
+          this: the first 150 pages took me over a week to read, but I read the
+          last 350 pages in 3 days. For all of the misgivings in the first half
+          of the book, the second half makes up for it. The second season of the
+          show can&apos;t come fast enough and the second book is high on my
+          list.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "Breath",
+    url: "breath",
+    author: "James Nestor",
+    favorite: true,
+    bookclub: false,
+    rating: 4.5,
+    date_finished: new Date(2024, 1, 22),
+    image: {
+      coverImage: "/books/breath.jpg",
+      imageAlt: "breath cover",
+    },
+    description:
+      "For a book that is jam packed with science, this was a page turner! My biggest take away from this book is the tools which have allowed me to make noticeable improvements in my health. Nestor describes simple breathing techniques aimed towards improving quality of life. I prompted ChatGPT to highlight those techniques in the summary below.",
+    summary: (
+      <>
+        <p>
+          For a book that is jam packed with science, this was a page turner! My
+          biggest take away from this book is the tools which have allowed me to
+          make noticeable improvements in my health. Nestor describes simple
+          breathing techniques aimed towards improving quality of life. I
+          prompted ChatGPT to highlight those techniques in the summary below.
+        </p>
+        <p>
+          In &quot;Breath&quot; by James Nestor, readers delve into the
+          intricate world of respiration, discovering how breathing goes beyond
+          mere survival to become a cornerstone of holistic well-being. Nestor
+          meticulously outlines various techniques, each offering unique
+          benefits:
+        </p>
+        <ul className="list-none ml-1 flex flex-col gap-2">
+          <li className="bg-muted rounded-xl p-2">
+            <span className="font-bold block">Nasal Breathing</span>
+            Nestor champions nasal breathing as vital for optimal health,
+            explaining its evolutionary significance and physiological
+            advantages. By prioritizing nasal breathing, readers can harness its
+            ability to filter, humidify, and optimize oxygen uptake, laying a
+            foundation for vitality.
+          </li>
+          <li className="bg-muted rounded-xl p-2">
+            <span className="font-bold block">Mouth Taping</span> Nestor
+            introduces mouth taping as a novel technique to promote nasal
+            breathing, especially during sleep. By gently sealing the lips with
+            tape, individuals maintain nasal breathing patterns, improving sleep
+            quality, reducing snoring, and addressing sleep apnea.
+          </li>
+          <li className="bg-muted rounded-xl p-2">
+            <span className="font-bold block">Chewing</span> Nestor explores the
+            overlooked practice of chewing, revealing its profound impact beyond
+            mere mastication. By embracing mindful chewing, individuals
+            stimulate nitric oxide production, supporting cardiovascular health
+            and overall vitality.
+          </li>
+          <li className="bg-muted rounded-xl p-2">
+            <span className="font-bold block">Wim Hof Breathing</span> Nestor
+            delves into the transformative power of the Wim Hof Method, a
+            breathwork technique pioneered by the Dutch athlete. Through
+            controlled hyperventilation and breath retention, practitioners
+            unlock benefits like enhanced immune function, stress reduction, and
+            heightened mental clarity.
+          </li>
+          <li className="bg-muted rounded-xl p-2">
+            <span className="font-bold block">The Perfect Breath</span> Nestor
+            elucidates the essence of the perfect breath, which involves
+            inhaling and exhaling for precisely 5.5 seconds each. This rhythmic
+            pattern, marked by its harmony of depth, rhythm, and intentionality,
+            fosters profound relaxation and vitality. By cultivating awareness
+            of each inhalation and exhalation, individuals tap into the innate
+            wisdom of the breath, experiencing its transformative power
+            firsthand.
+          </li>
+        </ul>
+        <p>
+          Through scientific research, personal anecdotes, and ancient wisdom,
+          &quot;Breath&quot; equips readers with a comprehensive toolkit to
+          optimize respiratory health and unlock the breath&apos;s
+          transformative potential. From nasal breathing to mouth taping,
+          chewing, and breathwork like the Wim Hof Method, individuals embark on
+          a journey of self-discovery and holistic well-being grounded in the
+          breath&quot;s profound wisdom.
+        </p>
+      </>
+    ),
+  },
+  {
     title: "Talking to Strangers",
     url: "talking-to-strangers",
     author: "Malcom Gladwell",
