@@ -15,7 +15,12 @@ import { BOOK_DATA } from "./books/book-data"
 import { PROJECT_DATA } from "./projects/project-data"
 
 const book_ref = BOOK_DATA.map(function (book) {
-  return { date_finished: book.date_finished, type: "book", url: book.url }
+  return {
+    date_finished: book.date_finished,
+    type: "book",
+    url: book.url,
+    favorite: book.favorite,
+  }
 })
 
 const project_ref = PROJECT_DATA.map(function (project) {
@@ -26,11 +31,27 @@ const project_ref = PROJECT_DATA.map(function (project) {
   }
 })
 
-const card_refs = [...book_ref, ...project_ref].sort(function compare(a, b) {
-  return (
-    new Date(b.date_finished).valueOf() - new Date(a.date_finished).valueOf()
-  )
-})
+interface ItemInterface {
+  date_finished: Date
+  type: string
+  url: string
+  favorite: boolean
+}
+
+const sortItems = (a: ItemInterface, b: ItemInterface) => {
+  if (a.favorite && !b.favorite) {
+    return -1
+  } else if (!a.favorite && b.favorite) {
+    return 1
+  } else {
+    return (
+      new Date(b.date_finished).valueOf() - new Date(a.date_finished).valueOf()
+    )
+  }
+}
+
+const sortedBooks = [...book_ref].sort(sortItems)
+// const sortedProjects = [...project_ref].sort(sortItems)
 
 export default function IndexPage() {
   return (
@@ -75,16 +96,16 @@ export default function IndexPage() {
       </Hero>
 
       <section className="container mx-auto relative m-4">
-        <div className="flex w-full justify-center mb-4">
+        <div className="flex w-full justify-center mb-12">
           <div className="flex flex-col md:flex-row max-w-[700px] w-full justify-between items-center md:items-start gap-4 md:gap-0">
             <div className="flex flex-col gap-2 text-center md:text-start">
-              <h1 className="text-lg md:text-2xl font-bold leading-tight text-accent-foreground tracking-tighter ">
+              <h1 className="text-lg md:text-3xl font-bold leading-tight text-accent-foreground tracking-tighter ">
                 Hello World!
               </h1>
               <div className="text-lg text-bold text-muted-foreground">
-                I&apos;m Keenan Flynn, a software engineer & aspiring entrepreneur.
-                This website is a reflection of my career path and interests.
-                For more information feel free to connect with me on{" "}
+                I&apos;m Keenan Flynn, a software engineer & aspiring
+                entrepreneur. This website is a reflection of my career path and
+                interests. For more information feel free to connect with me on{" "}
                 <Link
                   href={siteConfig.links.linkedin}
                   className="inline underline underline-offset-2"
@@ -96,22 +117,48 @@ export default function IndexPage() {
             </div>
           </div>
         </div>
-        <div className="flex flex-auto flex-row flex-wrap w-full items-center justify-center gap-4">
-          {card_refs.map((card) => {
-            if (card.type === "book") {
-              const book = BOOK_DATA.find((b) => b.url === card.url)
-              if (book) {
-                return <BookCard {...book} key={book?.url} />
-              }
-            } else if (card.type === "project") {
-              const project = PROJECT_DATA.find((p) => p.url === card.url)
-              if (project) {
-                return <ProjectCard {...project} key={project.url} />
-              }
-            }
-          })}
+
+        <div className="flex flex-col justify-center items-center gap-8">
+          <div className="flex flex-col w-full justify-center items-center gap-4">
+            <Link
+              href="/projects"
+              className="mx-auto md:ml-16 text-accent-foreground hover:text-accent-foreground/80"
+            >
+              <h1 className="text-lg md:text-2xl font-bold leading-tight  tracking-tighter">
+                My Projects
+              </h1>
+              <p className="text-sm">See more {"〉"}</p>
+            </Link>
+            <div className="flex flex-row flex-wrap  items-center justify-center gap-4">
+              {PROJECT_DATA.map((project, i) => {
+                if (i < 3) {
+                  return <ProjectCard {...project} key={project.url} />
+                }
+              })}
+            </div>
+          </div>
+          <div className="flex flex-col w-full justify-center items-center gap-4">
+            <Link
+              href="/books"
+              className="mx-auto md:ml-16 text-accent-foreground hover:text-accent-foreground/80"
+            >
+              <h1 className="text-lg md:text-2xl font-bold leading-tight  tracking-tighter">
+                Books I&apos;m Reading!
+              </h1>
+              <p className="text-sm">See more {"〉"}</p>
+            </Link>
+            <div className="flex flex-row flex-wrap  items-center justify-center gap-4">
+              {sortedBooks.map((bookRef, i) => {
+                if (i < 3) {
+                  const book = BOOK_DATA.find((b) => b.url === bookRef.url)
+                  if (book) return <BookCard {...book} key={book.url} />
+                }
+              })}
+            </div>
+          </div>
         </div>
       </section>
+
       <div className="h-12" />
     </main>
   )
