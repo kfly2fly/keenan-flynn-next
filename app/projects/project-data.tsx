@@ -1,5 +1,24 @@
 export const PROJECT_DATA = [
     {
+        title: "HTTP Server with C++",
+        url: "cpp-http",
+        description: "An HTTP Server built from scratch with C++",
+        githubUrl: "https://github.com/kfly2fly/web-server-cpp",
+        markdownUrl: "https://raw.githubusercontent.com/kfly2fly/web-server-cpp/main/README.md",
+        hostedUrl: null,
+        date_finished: new Date(2024, 5),
+        image: {
+            screenshot: "/projects/http-c++.png",
+            imageAlt: "HTTP with C++ logo"
+        },
+        
+        skills: [
+            "C++",
+            "HTTP",
+            "Sockets",
+            ]
+    },
+    {
         title: "KeenanFlynn.com",
         url: "next-site",
         description: "My personal website built with NextJS and TailwindCSS",

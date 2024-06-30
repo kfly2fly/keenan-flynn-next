@@ -7,7 +7,7 @@ import BookCard from "@/components/books/book-card"
 import Hero from "@/components/books/book-hero"
 import { BookIcon } from "@/components/icons"
 
-import { BOOK_DATA } from "./book-data"
+import { BOOK_DATA, BOOK_DATA_NO_REVIEW } from "./book-data"
 
 export default async function BookPage() {
   return (
@@ -57,10 +57,29 @@ export default async function BookPage() {
             </div>
           </div>
         </div>
-        <div className="flex flex-auto flex-row flex-wrap w-full items-center justify-center gap-4">
-          {BOOK_DATA.map((book) => {
-            return <BookCard {...book} key={book.url} />
-          })}
+        <div className="flex flex-col w-full justify-center items-center gap-4 mb-8">
+          <div className="mx-auto md:ml-16 text-accent-foreground ">
+            <h1 className="text-lg md:text-2xl font-bold leading-tight  tracking-tighter">
+              My Book Reviews!
+            </h1>
+          </div>
+          <div className="flex flex-auto flex-row flex-wrap w-full items-center justify-center gap-4">
+            {BOOK_DATA.map((book) => {
+              return <BookCard {...book} key={book.url} />
+            })}
+          </div>
+        </div>
+        <div className="flex flex-col w-full justify-center items-center gap-4">
+          <div className="mx-auto md:ml-16 text-accent-foreground ">
+            <h1 className="text-lg md:text-2xl font-bold leading-tight  tracking-tighter">
+              Other Books I&apos;ve Been Reading
+            </h1>
+          </div>
+          <div className="flex flex-auto flex-row flex-wrap w-full items-center justify-center gap-4">
+            {BOOK_DATA_NO_REVIEW.map((book) => {
+              return <BookCard {...book} key={book.url} />
+            })}
+          </div>
         </div>
       </section>
     </main>

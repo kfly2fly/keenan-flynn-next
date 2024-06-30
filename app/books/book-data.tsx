@@ -11,8 +11,166 @@ import {
 
 export const BOOK_DATA = [
   {
+    title: "Wool",
+    url: "/books/wool",
+    author: "Hugh Howey",
+    favorite: false,
+    bookclub: false,
+    rating: 4.0,
+    date_finished: new Date(2024, 4, 4),
+    image: {
+      coverImage: "/books/wool.jfif",
+      imageAlt: "wool cover",
+    },
+    description:
+      'Wool. I picked up this book after watching Apple TVs dystopian, neo-noir thriller "Silo". A story about inhabitants in a ruined world living in an underground bunker called… The Silo. The story reminds me so much of the video game Fallout. Hours upon hours I dedicated to that game, feeling fully immersed by the world building, characters, and Atom Punk genre. I think this connection was one of the reasons why Wool was able to suck me in.',
+    summary: (
+      <>
+        <p>
+          Wool. I picked up this book after watching the dystopian, neo-noir
+          thriller &quot;Silo&quot; on Apple TV. It&apos;s a story about
+          inhabitants of a ruined world living in an underground bunker called…
+          The Silo. To me the story is heavily reminiscent of the video game
+          Fallout. As a teenager I sunk hours upon hours into that game, feeling
+          deeply immersed by the world building, characters, and Atom Punk
+          genre. That connection was a major reason Wool was able to suck me in.
+        </p>
+        <p>
+          Having watched the show before reading the book I had some high hopes.
+          The show did such a good job with{" "}
+          <span className="italic">theming</span> which made reading the book
+          really easy to visualize. One of the best things about the book is the
+          immersion. The world feels lived in. Though it&apos;s fiction, it
+          feels realistic. It&apos;s easy to see how a chain of events could
+          lead to something like the Silo existing. The people and characters
+          feel motivated. We get a lot of POVs in this book from both main
+          characters and side characters, and even though the POV jumps the plot
+          continues to flow easily.
+        </p>
+        <p>
+          To be clear the book is not perfect. A reader can tell that this is
+          Hugh Howey&apos;s first book. The first 150 pages are especially rough
+          around the edges, with overly complex dialogue and descriptions. I
+          also found the villain to be a bit weak in his motivation. At times it
+          felt like there were villainous actions just for the sake of being
+          evil. Towards the end of the book we get a bit of justification for
+          the big bad guy but it&apos;s still a bit hard to fully rationalize.
+        </p>
+        <p>
+          A big surprise to me was that the full season of the TV show (10
+          hours) only covered 200 pages of the book. That&apos;s less than half
+          of the total 500. The second half of the book is much better than the
+          first, so I found myself questioning why the show really shined. I
+          think the show really deserves some credit for taking the time to
+          flesh out the world, something that wasn&apos;t missing from the book
+          but could have been improved nonetheless. Little backstories, side
+          plots, new characters all filled in the gaps. This is really a rare
+          thing in today&apos; television where producers are looking for the
+          big shock value plot points. But what makes those plot points shocking
+          is the methodical build up of tension. I believe that&apos;s why so
+          many people argue that &quot;the book is better&quot; when talking
+          about their favorite franchise. Books just have more time to be
+          methodical. Only in the case of Wool and Silo it&apos;s flipped.
+        </p>
+        <p>
+          What makes me really excited for the future of the TV and book series
+          is that Hugh Howey made BIG improvements as the book went on. Consider
+          this: the first 150 pages took me over a week to read, but I read the
+          last 350 pages in 3 days. For all of the misgivings in the first half
+          of the book, the second half makes up for it. The second season of the
+          show can&apos;t come fast enough and the second book is high on my
+          list.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "Breath",
+    url: "/books/breath",
+    author: "James Nestor",
+    favorite: true,
+    bookclub: false,
+    rating: 4.5,
+    date_finished: new Date(2024, 1, 22),
+    image: {
+      coverImage: "/books/breath.jpg",
+      imageAlt: "breath cover",
+    },
+    description:
+      "For a book that is jam packed with science, this was a page turner! My biggest take away from this book is the tools which have allowed me to make noticeable improvements in my health. Nestor describes simple breathing techniques aimed towards improving quality of life. I prompted ChatGPT to highlight those techniques in the summary below.",
+    summary: (
+      <>
+        <p>
+          For a book that is jam packed with science, this was a page turner! My
+          biggest take away from this book is the tools which have allowed me to
+          make noticeable improvements in my health. Nestor describes simple
+          breathing techniques aimed towards improving quality of life. I
+          prompted ChatGPT to highlight those techniques in the summary below.
+        </p>
+        <p>
+          In &quot;Breath&quot; by James Nestor, readers delve into the
+          intricate world of respiration, discovering how breathing goes beyond
+          mere survival to become a cornerstone of holistic well-being. Nestor
+          meticulously outlines various techniques, each offering unique
+          benefits:
+        </p>
+        <ul className="list-none ml-1 flex flex-col gap-2">
+          <li className="bg-muted rounded-xl p-2">
+            <span className="font-bold block">Nasal Breathing</span>
+            Nestor champions nasal breathing as vital for optimal health,
+            explaining its evolutionary significance and physiological
+            advantages. By prioritizing nasal breathing, readers can harness its
+            ability to filter, humidify, and optimize oxygen uptake, laying a
+            foundation for vitality.
+          </li>
+          <li className="bg-muted rounded-xl p-2">
+            <span className="font-bold block">Mouth Taping</span> Nestor
+            introduces mouth taping as a novel technique to promote nasal
+            breathing, especially during sleep. By gently sealing the lips with
+            tape, individuals maintain nasal breathing patterns, improving sleep
+            quality, reducing snoring, and addressing sleep apnea.
+          </li>
+          <li className="bg-muted rounded-xl p-2">
+            <span className="font-bold block">Chewing</span> Nestor explores the
+            overlooked practice of chewing, revealing its profound impact beyond
+            mere mastication. By embracing mindful chewing, individuals
+            stimulate nitric oxide production, supporting cardiovascular health
+            and overall vitality.
+          </li>
+          <li className="bg-muted rounded-xl p-2">
+            <span className="font-bold block">Wim Hof Breathing</span> Nestor
+            delves into the transformative power of the Wim Hof Method, a
+            breathwork technique pioneered by the Dutch athlete. Through
+            controlled hyperventilation and breath retention, practitioners
+            unlock benefits like enhanced immune function, stress reduction, and
+            heightened mental clarity.
+          </li>
+          <li className="bg-muted rounded-xl p-2">
+            <span className="font-bold block">The Perfect Breath</span> Nestor
+            elucidates the essence of the perfect breath, which involves
+            inhaling and exhaling for precisely 5.5 seconds each. This rhythmic
+            pattern, marked by its harmony of depth, rhythm, and intentionality,
+            fosters profound relaxation and vitality. By cultivating awareness
+            of each inhalation and exhalation, individuals tap into the innate
+            wisdom of the breath, experiencing its transformative power
+            firsthand.
+          </li>
+        </ul>
+        <p>
+          Through scientific research, personal anecdotes, and ancient wisdom,
+          &quot;Breath&quot; equips readers with a comprehensive toolkit to
+          optimize respiratory health and unlock the breath&apos;s
+          transformative potential. From nasal breathing to mouth taping,
+          chewing, and breathwork like the Wim Hof Method, individuals embark on
+          a journey of self-discovery and holistic well-being grounded in the
+          breath&quot;s profound wisdom.
+        </p>
+      </>
+    ),
+  },
+  {
     title: "Talking to Strangers",
-    url: "talking-to-strangers",
+    url: "/books/talking-to-strangers",
     author: "Malcom Gladwell",
     favorite: false,
     bookclub: false,
@@ -124,7 +282,7 @@ export const BOOK_DATA = [
   },
   {
     title: "The Martian",
-    url: "the-martian",
+    url: "/books/the-martian",
     author: "Andy Weir",
     favorite: false,
     bookclub: false,
@@ -220,7 +378,7 @@ export const BOOK_DATA = [
   },
   {
     title: "So Good They Can't Ignore You",
-    url: "so-good-they-cant-ignore-you",
+    url: "/books/so-good-they-cant-ignore-you",
     author: "Cal Newport",
     favorite: true,
     bookclub: false,
@@ -410,7 +568,7 @@ export const BOOK_DATA = [
 
   {
     title: "Gates of Fire",
-    url: "gates-of-fire",
+    url: "/books/gates-of-fire",
     author: "Steven Pressfield",
     favorite: false,
     bookclub: true,
@@ -498,5 +656,98 @@ export const BOOK_DATA = [
         </div>
       </>
     ),
+  },
+] as const
+
+export const BOOK_DATA_NO_REVIEW = [
+  {
+    title: "The Three Body Problem",
+    url: "https://www.goodreads.com/book/show/20518872-the-three-body-problem",
+    author: "Cixin Liu",
+    favorite: false,
+    bookclub: false,
+    rating: 3.0,
+    date_finished: new Date(2024, 5, 30),
+    image: {
+      coverImage: "/books/three-body-problem.jpg",
+      imageAlt: "three body problem cover",
+    },
+    description:
+      "Set against the backdrop of China's Cultural Revolution, a secret military project sends signals into space to establish contact with aliens. An alien civilization on the brink of destruction captures the signal and plans to invade Earth. Meanwhile, on Earth, different camps start forming, planning to either welcome the superior beings and help them take over a world seen as corrupt, or to fight against the invasion.",
+  },
+  {
+    title: "The Heroes",
+    url: "https://www.goodreads.com/book/show/9300768-the-heroes",
+    author: "Joe Abercrombie",
+    favorite: true,
+    bookclub: false,
+    rating: 4.5,
+    date_finished: new Date(2024, 5, 21),
+    image: {
+      coverImage: "/books/heroes.jfif",
+      imageAlt: "heroes cover",
+    },
+    description:
+      "They say Black Dow's killed more men than winter, and clawed his way to the throne of the North up a hill of skulls. The King of the Union, ever a jealous neighbor, is not about to stand smiling by while he claws his way any higher. The orders have been given and the armies are toiling through the northern mud. Thousands of men are converging on a forgotten ring of stones, on a worthless hill, in an unimportant valley, and they've brought a lot of sharpened metal with them. For glory, for victory, for staying alive.",
+  },
+  {
+    title: "Sapiens",
+    url: "https://www.goodreads.com/book/show/23692271-sapiens",
+    author: "Yuval Noah Harari",
+    favorite: false,
+    bookclub: false,
+    rating: 4.0,
+    date_finished: new Date(2024, 5, 6),
+    image: {
+      coverImage: "/books/sapiens.jpg",
+      imageAlt: "sapiens cover",
+    },
+    description:
+      "From a renowned historian comes a groundbreaking narrative of humanity’s creation and evolution—a #1 international bestseller—that explores the ways in which biology and history have defined us and enhanced our understanding of what it means to be “human.” One hundred thousand years ago, at least six different species of humans inhabited Earth. Yet today there is only one—homo sapiens. What happened to the others? And what may happen to us? Most books about the history of humanity pursue either a historical or a biological approach, but Dr. Yuval Noah Harari breaks the mold with this highly original book that begins about 70,000 years ago with the appearance of modern cognition. From examining the role evolving humans have played in the global ecosystem to charting the rise of empires, Sapiens integrates history and science to reconsider accepted narratives, connect past developments with contemporary concerns, and examine specific events within the context of larger ideas. Dr. Harari also compels us to look ahead, because over the last few decades humans have begun to bend laws of natural selection that have governed life for the past four billion years. We are acquiring the ability to design not only the world around us, but also ourselves. Where is this leading us, and what do we want to become? Featuring 27 photographs, 6 maps, and 25 illustrations/diagrams, this provocative and insightful work is sure to spark debate and is essential reading for aficionados of Jared Diamond, James Gleick, Matt Ridley, Robert Wright, and Sharon Moalem.",
+  },
+  {
+    title: "Can't Hurt Me",
+    url: "https://www.goodreads.com/book/show/41721428-can-t-hurt-me",
+    author: "David Goggins",
+    favorite: true,
+    bookclub: false,
+    rating: 4.5,
+    date_finished: new Date(2024, 4, 5),
+    image: {
+      coverImage: "/books/cant-hurt-me.jpg",
+      imageAlt: "cant hurt me cover",
+    },
+    description:
+      "For David Goggins, childhood was a nightmare -- poverty, prejudice, and physical abuse colored his days and haunted his nights. But through self-discipline, mental toughness, and hard work, Goggins transformed himself from a depressed, overweight young man with no future into a U.S. Armed Forces icon and one of the world's top endurance athletes. The only man in history to complete elite training as a Navy SEAL, Army Ranger, and Air Force Tactical Air Controller, he went on to set records in numerous endurance events, inspiring Outside magazine to name him \"The Fittest (Real) Man in America.\"In Can't Hurt Me, he shares his astonishing life story and reveals that most of us tap into only 40% of our capabilities. Goggins calls this The 40% Rule, and his story illuminates a path that anyone can follow to push past pain, demolish fear, and reach their full potential.",
+  },
+  {
+    title: "Outliers",
+    url: "https://www.goodreads.com/book/show/3228917-outliers",
+    author: "Malcolm Gladwell",
+    favorite: false,
+    bookclub: false,
+    rating: 4.0,
+    date_finished: new Date(2024, 3, 16),
+    image: {
+      coverImage: "/books/outliers.jpg",
+      imageAlt: "outliers cover",
+    },
+    description:
+      'In this stunning book, Malcolm Gladwell takes us on an intellectual journey through the world of "outliers"—the best and the brightest, the most famous and the most successful. He asks the question: what makes high-achievers different? His answer is that we pay too much attention to what successful people are like, and too little attention to where they are from: that is, their culture, their family, their generation, and the idiosyncratic experiences of their upbringing. Along the way he explains the secrets of software billionaires, what it takes to be a great soccer player, why Asians are good at math, and what made the Beatles the greatest rock band.',
+  },
+  {
+    title: "The Fellowship of the Ring",
+    url: "https://www.goodreads.com/book/show/61215351-the-fellowship-of-the-ring",
+    author: "J.R.R. Tolkein",
+    favorite: false,
+    bookclub: false,
+    rating: 5.0,
+    date_finished: new Date(2024, 3, 16),
+    image: {
+      coverImage: "/books/fellowship.jpg",
+      imageAlt: "fellowship cover",
+    },
+    description:
+      "One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them. In ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, the Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell into the hands of Bilbo Baggins, as told in The Hobbit. In a sleepy village in the Shire, young Frodo Baggins finds himself faced with an immense task, as his elderly cousin Bilbo entrusts the Ring to his care. Frodo must leave his home and make a perilous journey across Middle-earth to the Cracks of Doom, there to destroy the Ring and foil the Dark Lord in his evil purpose.",
   },
 ] as const
