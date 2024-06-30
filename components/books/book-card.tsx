@@ -26,12 +26,11 @@ interface BookCardProps {
     imageAlt: string
   }
   description: string
-  summary: JSX.Element
 }
 
 export default function BookCard(book: BookCardProps) {
   return (
-    <Link href={`/books/${book.url}`} scroll>
+    <Link href={book.url} scroll>
       <Card className="bg-muted max-w-96 h-72 hover:bg-accent hover:border-primary">
         <CardHeader className="pb-3 w-full flex flex-row justify-between items-start">
           <CardTitle className="text-accent-foreground">{book.title}</CardTitle>
