@@ -741,7 +741,7 @@ export const BOOK_DATA_NO_REVIEW = [
     author: "J.R.R. Tolkein",
     favorite: false,
     bookclub: false,
-    rating: 4.0,
+    rating: 5.0,
     date_finished: new Date(2024, 3, 16),
     image: {
       coverImage: "/books/fellowship.jpg",
