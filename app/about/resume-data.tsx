@@ -77,50 +77,47 @@ export const RESUME_DATA = {
       description: (
         <ul className="list-disc list-inside">
           <li>
-            Developed{" "}
-            <span className="text-accent-foreground">
-              Realtime Data pipeline
-            </span>{" "}
-            to stream data changes from{" "}
-            <span className="text-accent-foreground">Oracle </span>
-            database to next-gen Factory dashboard.
+            Pioneered first enterprise use-case of CDC technology to build data
+            pipeline processing ~500,000 messages/day.
             <ul className="ml-4 list-disc list-inside mb-1">
               <li>
-                Pioneered first enterprise use-case of CDC technology to process
-                500,000 messages/day:{" "}
-                <span className="text-accent-foreground">Kafka</span>,
+                Utilized <span className="text-accent-foreground">Kafka</span>,
                 <span className="text-accent-foreground"> Qlik</span>,
-                <span className="text-accent-foreground"> Dataiku</span>.
+                <span className="text-accent-foreground"> Dataiku</span> to
+                stream data changes from Oracle database to next-gen Factory
+                dashboard.
               </li>
               <li>
-                Managed project with Lean Six Sigma project management tools;
-                completed Greenbelt certification.
+                Managed project with Lean Six Sigma tools; completed Greenbelt
+                with estimated cost savings of $35,000/year.
               </li>
             </ul>
           </li>
 
           <li>
-            Executed R&D project exploring application of Knowledge Graph
-            database for Manufacturing use-case.
+            Executed R&D project exploring application of a Graph database for
+            Manufacturing & DFM use-case
             <ul className="ml-4 list-disc list-inside mb-1">
               <li>
-                Implemented{" "}
-                <span className="text-accent-foreground">Python-Django</span>{" "}
-                backend, <span className="text-accent-foreground">HBase</span>{" "}
-                as graph database,
-                <span className="text-accent-foreground"> NextJS</span> frontend
-                with Plotly visuals.
+                Formulated statistical insights to examine long-term Process
+                Capability, generated via{" "}
+                <span className="text-accent-foreground">Django</span> and{" "}
+                <span className="text-accent-foreground">HBase</span>.
               </li>
               <li>
-                Generated Statistical aggregations and insights to examine
-                long-term Process Capability.
+                Advanced factory understanding of BOM trees and Inspection data
+                with beautiful UI:{" "}
+                <span className="text-accent-foreground">NextJS</span> and{" "}
+                <span className="text-accent-foreground">Plotly</span>.
               </li>
             </ul>
           </li>
           <li>
-            Automated & Improved business process on Distributed{" "}
-            <span className="text-accent-foreground">Hadoop</span> data platform
-            and Dataiku analytics platform.
+            Automated & Improved business processes on{" "}
+            <span className="text-accent-foreground">Hadoop</span> enterprise
+            data platform and{" "}
+            <span className="text-accent-foreground">Dataiku</span> analytics
+            platform.
           </li>
         </ul>
       ),
