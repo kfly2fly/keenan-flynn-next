@@ -2,10 +2,9 @@ import Image from "next/image"
 import { StarBorder } from "@mui/icons-material"
 import Rating from "@mui/material/Rating"
 
-export const revalidate = 3600
-
-
 import { BOOK_DATA } from "../book-data"
+
+export const revalidate = 3600
 
 interface BookShowPageProps {
   params: {
@@ -14,10 +13,9 @@ interface BookShowPageProps {
 }
 
 export default async function BookShowPage(props: BookShowPageProps) {
-  const book = BOOK_DATA.find((x) => x.url === props.params.slug)
+  const book = BOOK_DATA.find((x) => x.url === `/books/${props.params.slug}`)
 
   if (!book) {
-    console.log("DOES NOT EXIST")
     return <div>BOOK DOES NOT EXIST</div>
   } else {
     return (
