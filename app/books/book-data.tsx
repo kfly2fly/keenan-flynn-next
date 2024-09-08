@@ -664,7 +664,7 @@ export const BOOK_DATA_NO_REVIEW = [
     title: "The Three Body Problem",
     url: "https://www.goodreads.com/book/show/20518872-the-three-body-problem",
     author: "Cixin Liu",
-    favorite: false,
+    favorite: true,
     bookclub: false,
     rating: 3.0,
     date_finished: new Date(2024, 5, 30),
