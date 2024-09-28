@@ -19,7 +19,7 @@ export const BOOK_DATA = [
     rating: 4.0,
     date_finished: new Date(2024, 4, 4),
     image: {
-      coverImage: "/books/wool.jfif",
+      coverImage: "/books/wool.jpg",
       imageAlt: "wool cover",
     },
     description:
@@ -661,11 +661,101 @@ export const BOOK_DATA = [
 
 export const BOOK_DATA_NO_REVIEW = [
   {
+    title: "The Gate of the Feral Gods",
+    url: "https://www.goodreads.com/book/show/57905101-the-gate-of-the-feral-gods",
+    author: "Matt Dinniman",
+    favorite: true,
+    bookclub: false,
+    rating: 5,
+    date_finished: new Date(2024, 9, 18),
+    image: {
+      coverImage: "/books/dcc-4.jpg",
+      imageAlt: "dungeon crawler carl cover",
+    },
+    description:
+      "A floating fortress occupied by warrior gnomes. A castle made of sand. A derelict submarine guarded by malfunctioning machines. A haunted crypt surrounded by lethal traps.",
+  },
+  {
+    title: "Dungeon Anarchist's Cookbook",
+    url: "https://www.goodreads.com/book/show/57001971-the-dungeon-anarchist-s-cookbook",
+    author: "Matt Dinniman",
+    favorite: true,
+    bookclub: false,
+    rating: 5,
+    date_finished: new Date(2024, 9, 13),
+    image: {
+      coverImage: "/books/dcc-3.jpg",
+      imageAlt: "dungeon crawler carl cover",
+    },
+    description:
+      "The Iron Tangle. An impossibly-complicated subway system built out of the world's subterranean railway systems, all combined and then tied together into a knot. Up is down. Down is up. Close is far. The cars are filled with monsters, the railway stations are less than safe, and the exit is always just a few stops away.",
+  },
+  {
+    title: "Lord of Emperors",
+    url: "https://www.goodreads.com/book/show/104091.Lord_of_Emperors",
+    author: "Guy Gavriel Kay",
+    favorite: false,
+    bookclub: false,
+    rating: 4,
+    date_finished: new Date(2024, 9, 5),
+    image: {
+      coverImage: "/books/lord-of-emp.jpg",
+      imageAlt: "Lord of emperors cover",
+    },
+    description:
+      "Beckoned by the Emperor Valerius, Crispin, a renowned mosaicist, has arrived in the fabled city of Sarantium. Here he seeks to fulfill his artistic ambitions and his destiny high upon a dome that will become the emerror's magnificent sanctuary and legacy.",
+  },
+  {
+    title: "Carl's Doomday Scenario",
+    url: "https://www.goodreads.com/book/show/56377548-carl-s-doomsday-scenario",
+    author: "Matt Dinniman",
+    favorite: false,
+    bookclub: false,
+    rating: 4.5,
+    date_finished: new Date(2024, 8, 17),
+    image: {
+      coverImage: "/books/dcc-2.jpg",
+      imageAlt: "dungeon crawler carl cover",
+    },
+    description:
+      "The ratings and views are off the chart. The fans just can't get enough. The dungeon gets more dangerous each day. But in a grinder designed to chew up and spit out crawlers by the millions, Carl and Princess Donut need to work harder than ever just to survive.",
+  },
+  {
+    title: "Dungeon Crawler Carl",
+    url: "https://www.goodreads.com/book/show/56791389-dungeon-crawler-carl",
+    author: "Matt Dinniman",
+    favorite: true,
+    bookclub: false,
+    rating: 5,
+    date_finished: new Date(2024, 8, 16),
+    image: {
+      coverImage: "/books/dcc-1.jpg",
+      imageAlt: "dungeon crawler carl cover",
+    },
+    description:
+      "A man. His ex-girlfriend's cat. A sadistic game show unlike anything in the universe: a dungeon crawl where survival depends on killing your prey in the most entertaining way possible.",
+  },
+  {
+    title: "Sailing to Sarantium",
+    url: "https://www.goodreads.com/book/show/104097.Sailing_to_Sarantium",
+    author: "Guy Gavriel Kay",
+    favorite: false,
+    bookclub: false,
+    rating: 4.5,
+    date_finished: new Date(2024, 7, 10),
+    image: {
+      coverImage: "/books/sailing-to-sarantium.jpg",
+      imageAlt: "sarantine mosaic cover",
+    },
+    description:
+      "Crispin is a master mosaicist, creating beautiful art with colored stones and glass. Summoned to Sarantium by imperial request, he bears a Queen's secret mission, and a talisman from an alchemist. Once in the fabled city, with its taverns and gilded sanctuaries, chariot races and palaces, intrigues and violence, Crispin must find his own source of power in order to survive-and unexpectedly discovers it high on the scaffolding of his own greatest creation.",
+  },
+  {
     title: "The Three Body Problem",
     url: "https://www.goodreads.com/book/show/20518872-the-three-body-problem",
     author: "Cixin Liu",
-    favorite: true,
-    bookclub: false,
+    favorite: false,
+    bookclub: true,
     rating: 3.0,
     date_finished: new Date(2024, 5, 30),
     image: {
@@ -684,7 +774,7 @@ export const BOOK_DATA_NO_REVIEW = [
     rating: 4.5,
     date_finished: new Date(2024, 5, 21),
     image: {
-      coverImage: "/books/heroes.jfif",
+      coverImage: "/books/heroes.jpg",
       imageAlt: "heroes cover",
     },
     description:
