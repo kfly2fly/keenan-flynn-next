@@ -667,7 +667,7 @@ export const BOOK_DATA_NO_REVIEW = [
     favorite: true,
     bookclub: false,
     rating: 5,
-    date_finished: new Date(2024, 9, 18),
+    date_finished: new Date(2024, 8, 18),
     image: {
       coverImage: "/books/dcc-4.jpg",
       imageAlt: "dungeon crawler carl cover",
@@ -682,7 +682,7 @@ export const BOOK_DATA_NO_REVIEW = [
     favorite: true,
     bookclub: false,
     rating: 5,
-    date_finished: new Date(2024, 9, 13),
+    date_finished: new Date(2024, 8, 13),
     image: {
       coverImage: "/books/dcc-3.jpg",
       imageAlt: "dungeon crawler carl cover",
@@ -697,7 +697,7 @@ export const BOOK_DATA_NO_REVIEW = [
     favorite: false,
     bookclub: false,
     rating: 4,
-    date_finished: new Date(2024, 9, 5),
+    date_finished: new Date(2024, 8, 5),
     image: {
       coverImage: "/books/lord-of-emp.jpg",
       imageAlt: "Lord of emperors cover",
@@ -712,7 +712,7 @@ export const BOOK_DATA_NO_REVIEW = [
     favorite: false,
     bookclub: false,
     rating: 4.5,
-    date_finished: new Date(2024, 8, 17),
+    date_finished: new Date(2024, 7, 17),
     image: {
       coverImage: "/books/dcc-2.jpg",
       imageAlt: "dungeon crawler carl cover",
@@ -727,7 +727,7 @@ export const BOOK_DATA_NO_REVIEW = [
     favorite: true,
     bookclub: false,
     rating: 5,
-    date_finished: new Date(2024, 8, 16),
+    date_finished: new Date(2024, 7, 16),
     image: {
       coverImage: "/books/dcc-1.jpg",
       imageAlt: "dungeon crawler carl cover",
@@ -742,7 +742,7 @@ export const BOOK_DATA_NO_REVIEW = [
     favorite: false,
     bookclub: false,
     rating: 4.5,
-    date_finished: new Date(2024, 7, 10),
+    date_finished: new Date(2024, 6, 10),
     image: {
       coverImage: "/books/sailing-to-sarantium.jpg",
       imageAlt: "sarantine mosaic cover",
