@@ -661,6 +661,81 @@ export const BOOK_DATA = [
 
 export const BOOK_DATA_NO_REVIEW = [
   {
+    title: "A Litle Hatred",
+    url: "https://www.goodreads.com/book/show/35606041-a-little-hatred",
+    author: "Joe Abercrombie",
+    favorite: false,
+    bookclub: false,
+    rating: 4.5,
+    date_finished: new Date(2024, 11, 23),
+    image: {
+      coverImage: "/books/litle-hatred.jpg",
+      imageAlt: "litle hatred cover",
+    },
+    description:
+      "The chimneys of industry rise over Adua and the world seethes with new opportunities. But old scores run deep as ever. On the blood-soaked borders of Angland, Leo dan Brock struggles to win fame on the battlefield, and defeat the marauding armies of Stour Nightfall. He hopes for help from the crown. But King Jezal's son, the feckless Prince Orso, is a man who specializes in disappointments.",
+  },
+  {
+    title: "Red Country",
+    url: "https://www.goodreads.com/book/show/13521459-red-country",
+    author: "Joe Abercrombie",
+    favorite: false,
+    bookclub: false,
+    rating: 4,
+    date_finished: new Date(2024, 11, 3),
+    image: {
+      coverImage: "/books/red-country.jpg",
+      imageAlt: "red country cover",
+    },
+    description:
+      "Shy South hoped to bury her bloody past and ride away smiling, but she'll have to sharpen up some bad old ways to get her family back, and she's not a woman to flinch from what needs doing. She sets off in pursuit with only a pair of oxen and her cowardly old step father Lamb for company. But it turns out Lamb's buried a bloody past of his own. And out in the lawless Far Country the past never stays buried.",
+  },
+  {
+    title: "Eye of the Bedlam Bride",
+    url: "https://www.goodreads.com/book/show/125887685-the-eye-of-the-bedlam-bride",
+    author: "Matt Dinniman",
+    favorite: false,
+    bookclub: false,
+    rating: 3.5,
+    date_finished: new Date(2024, 10, 24),
+    image: {
+      coverImage: "/books/dcc-6.jpg",
+      imageAlt: "dungeon crawler carl cover",
+    },
+    description:
+      "A pantheon of forgotten gods. An old grudge between a talk show host, an heiress, and the man they shattered along the way. A rapidly deteriorating AI system. An inconvenient tiara upon the head of a friend. It is bedlam on the eighth floor.",
+  },
+  {
+    title: "The Two Towers",
+    url: "https://www.goodreads.com/book/show/61215372-the-two-towers",
+    author: "J.R.R. Tolkein",
+    favorite: false,
+    bookclub: false,
+    rating: 4,
+    date_finished: new Date(2024, 10, 13),
+    image: {
+      coverImage: "/books/two-towers.jpg",
+      imageAlt: "two towers cover",
+    },
+    description:
+      "Frodo and his Companions of the Ring have been beset by danger during their quest to prevent the Ruling Ring from falling into the hands of the Dark Lord by destroying it in the Cracks of Doom. They have lost the wizard, Gandalf, in a battle in the Mines of Moria. And Boromir, seduced by the power of the Ring, tried to seize it by force. While Frodo and Sam made their escape, the rest of the company was attacked by Orcs. Now they continue the journey alone down the great River Anduin—alone, that is, save for the mysterious creeping figure that follows wherever they go.",
+  },
+  {
+    title: "The Butcher's Masquerade",
+    url: "https://www.goodreads.com/en/book/show/60233239-the-butcher-s-masquerade",
+    author: "Matt Dinniman",
+    favorite: true,
+    bookclub: false,
+    rating: 5,
+    date_finished: new Date(2024, 9, 5),
+    image: {
+      coverImage: "/books/dcc-5.jpg",
+      imageAlt: "dungeon crawler carl cover",
+    },
+    description:
+      "A lush jungle teeming with danger. Savage dinosaurs seeking blood. A fallen princess intent on vengeance. A mysterious, end-of-floor celebration for the top crawlers, dubbed “The Butcher’s Masquerade.” The sixth floor. The Hunting Grounds.",
+  },
+  {
     title: "The Gate of the Feral Gods",
     url: "https://www.goodreads.com/book/show/57905101-the-gate-of-the-feral-gods",
     author: "Matt Dinniman",
