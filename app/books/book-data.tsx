@@ -661,6 +661,112 @@ export const BOOK_DATA = [
 
 export const BOOK_DATA_NO_REVIEW = [
   {
+    title: "Empire of Silence",
+    url: "https://www.goodreads.com/book/show/36454667-empire-of-silence",
+    author: "Christopher Ruocchio",
+    favorite: false,
+    bookclub: false,
+    rating: 4,
+    date_finished: new Date(2025, 3, 22),
+    image: {
+      coverImage: "/books/empire-of-silence.jpg",
+      imageAlt: "empire of silence cover",
+    },
+    description:
+      "Hadrian Marlowe, a man revered as a hero and despised as a murderer, chronicles his tale in the galaxy-spanning debut of the Sun Eater series, merging the best of space opera and epic fantasy. It was not his war. On the wrong planet, at the right time, for the best reasons, Hadrian Marlowe started down a path that could only end in fire. The galaxy remembers him as a the man who burned every last alien Cielcin from the sky. They remember him as a the devil who destroyed a sun, casually annihilating four billion human lives—even the Emperor himself—against Imperial orders. But Hadrian was not a hero. He was not a monster. He was not even a soldier. Fleeing his father and a future as a torturer, Hadrian finds himself stranded on a strange, backwater world. Forced to fight as a gladiator and into the intrigues of a foreign planetary court, he will find himself fight a war he did not start, for an Empire he does not love, against an enemy he will never understand.",
+  },
+  {
+    title: "Man's Search for Meaning",
+    url: "https://www.goodreads.com/book/show/4069.Man_s_Search_for_Meaning",
+    author: "Viktor E. Frankl",
+    favorite: false,
+    bookclub: false,
+    rating: 5,
+    date_finished: new Date(2025, 3, 15),
+    image: {
+      coverImage: "/books/mans-search.jpg",
+      imageAlt: "Man's Search for Meaning cover",
+    },
+    description:
+      "Psychiatrist Viktor Frankl's memoir has riveted generations of readers with its descriptions of life in Nazi death camps and its lessons for spiritual survival. Based on his own experience and the stories of his patients, Frankl argues that we cannot avoid suffering but we can choose how to cope with it, find meaning in it, and move forward with renewed purpose. At the heart of his theory, known as logotherapy, is a conviction that the primary human drive is not pleasure but the pursuit of what we find meaningful. Man's Search for Meaning has become one of the most influential books in America; it continues to inspire us all to find significance in the very act of living.",
+  },
+  {
+    title: "This Inevitable Ruin",
+    url: "https://www.goodreads.com/book/show/216017751-this-inevitable-ruin",
+    author: "Matt Dinniman",
+    favorite: false,
+    bookclub: false,
+    rating: 4,
+    date_finished: new Date(2025, 3, 9),
+    image: {
+      coverImage: "/books/dcc-7.jpg",
+      imageAlt: "dungeon crawler carl 6 cover",
+    },
+    description:
+      "They call it Faction Wars. The ninth floor. Nine armies, each led by rich and powerful aliens from across the galaxy. Each team has one objective: to capture and hold the castle at the very center of the battlefield. Strategy, alliances, pitched battles, and, of course, betrayal... It all makes for great fun and even greater television. After all, none of these powerful aliens really die when they’re playing war. Except this time. This time, winner takes all. Those who fall, stay in the ground. As the AI continues its rapid decline, Carl and company take advantage of the chaos. For the first time ever, the crawlers are fighting back. They are now one of the nine teams. And this season, there’s a tenth army on the playing field. The NPCs, who are normally used as nothing but cannon fodder, have become fully self-aware and formed a team of their own. For Donut and Katia, the stakes are even higher. Only one of them will be allowed to leave this level. If they all want to survive, they’re going to need a little help from a veteran or two. This is it. This is what they’ve been fighting toward. This is war. This inevitable ruin.",
+  },
+  {
+    title: "The Wisdom of Crowds",
+    url: "https://www.goodreads.com/book/show/40701780-the-wisdom-of-crowds",
+    author: "Joe Abercrombie",
+    favorite: true,
+    bookclub: false,
+    rating: 5,
+    date_finished: new Date(2024, 2, 28),
+    image: {
+      coverImage: "/books/wisdom-of-crowds.jpg",
+      imageAlt: "wisdom of crowds cover",
+    },
+    description:
+      "Chaos. Fury. Destruction. The Great Change is upon us... Some say that to change the world you must first burn it down. Now that belief will be tested in the crucible of revolution: the Breakers and Burners have seized the levers of power, the smoke of riots has replaced the smog of industry, and all must submit to the wisdom of crowds. With nothing left to lose, Citizen Brock is determined to become a new hero for the new age, while Citizeness Savine must turn her talents from profit to survival before she can claw her way to redemption. Orso will find that when the world is turned upside down, no one is lower than a monarch. And in the bloody North, Rikke and her fragile Protectorate are running out of allies... while Black Calder gathers his forces and plots his vengeance. The banks have fallen, the sun of the Union has been torn down, and in the darkness behind the scenes, the threads of the Weaver’s ruthless plan are slowly being drawn together...",
+  },
+  {
+    title: "The Trouble with Peace",
+    url: "https://www.goodreads.com/book/show/40701777-the-trouble-with-peace",
+    author: "Joe Abercrombie",
+    favorite: true,
+    bookclub: false,
+    rating: 5,
+    date_finished: new Date(2024, 1, 25),
+    image: {
+      coverImage: "/books/trouble-with-peace.jpg",
+      imageAlt: "trouble with peace cover",
+    },
+    description:
+      "Savine dan Glokta, once Aduas most powerful investor, finds her judgement, fortune and reputation in tatters. But she still has all her ambitions, and no scruple will be permitted to stand in her way. For heroes like Leo dan Brock and Stour Nightfall, only happy with swords drawn, peace is an ordeal to end as soon as possible. But grievances must be nursed, power seized and allies gathered first, while Rikke must master the power of the Long Eye... before it kills her.The Breakers still lurk in the shadows, plotting to free the common man from his shackles, while noblemen bicker for their own advantage. Orso struggles to find a safe path through the maze of knives that is politics, only for his enemies, and his debts, to multiply.The old ways are swept aside, and the old leaders with them, but those who would seize the reins of power will find no alliance, no friendship, and no peace, lasts forever.",
+  },
+  {
+    title: "Freakonomics",
+    url: "https://www.goodreads.com/book/show/1202.Freakonomics",
+    author: "Steven D. Levitt, Stephen J. Dubner",
+    favorite: false,
+    bookclub: false,
+    rating: 3,
+    date_finished: new Date(2025, 0, 29),
+    image: {
+      coverImage: "/books/freakonomics.jpg",
+      imageAlt: "freakonomics cover",
+    },
+    description:
+      "Which is more dangerous, a gun or a swimming pool? What do schoolteachers and sumo wrestlers have in common? Why do drug dealers still live with their moms? How much do parents really matter? What kind of impact did Roe v. Wade have on violent crime? Freakonomics will literally redefine the way we view the modern world.",
+  },
+  {
+    title: "Mort",
+    url: "https://www.goodreads.com/book/show/386372.Mort",
+    author: "Terry Pratchett",
+    favorite: false,
+    bookclub: false,
+    rating: 4,
+    date_finished: new Date(2025, 0, 21),
+    image: {
+      coverImage: "/books/mort.jpg",
+      imageAlt: "mort cover",
+    },
+    description:
+      "Death is the Grim Reaper of the Discworld, a black-robed skeleton with a scythe who ushers souls into the next world. He is also fond of cats and endlessly baffled by humanity. Soon Death is yearning to experience what humanity really has to offer, but to do that, he'll need to hire some help. It's an offer Mort can't refuse. As Death's apprentice he'll have free board, use of the company horse—and being dead isn't compulsory. It's a dream job—until Mort falls in love with Death's daughter, Ysabell, and discovers that your boss can be a killer on your love life…",
+  },
+
+  {
     title: "A Litle Hatred",
     url: "https://www.goodreads.com/book/show/35606041-a-little-hatred",
     author: "Joe Abercrombie",
