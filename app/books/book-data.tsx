@@ -11,6 +11,542 @@ import {
 
 export const BOOK_DATA = [
   {
+    title: "Deep Work",
+    url: "/books/deep-work",
+    author: "Cal Newport",
+    favorite: true,
+    bookclub: false,
+    rating: 4.5,
+    date_finished: new Date(2025, 0, 18),
+    image: {
+      coverImage: "/books/deep-work.jpg",
+      imageAlt: "deep work cover",
+    },
+    description:
+      "People fight desires all day long. Desire is the norm not the exception and this takes up our willpower. Implementing routines and rituals decrease the willpower needed to work deeply.",
+    summary: (
+      <>
+        <p className="mb-4">
+          I'm a big fan of Cal Newport. His ideas around work lifestyle really
+          connect with me because so much of our time is being competed for by
+          both digital and analog distractions. How are we not only supposed to
+          stay focused, but excel at our work in a digital age? Newport tries to
+          cut through the murk in Deep Work and offer solutions to this
+          question. As I read this book, I jotted some notes around the things
+          that really stood out to me. Enjoy!
+        </p>
+
+        <div className="mb-6">
+          <h1 className="text-2xl font-bold mb-4">Rule 1: Work Deeply</h1>
+          <p className="mb-4">
+            People fight desires all day long. Desire is the norm not the
+            exception and this takes up our willpower. Implementing routines and
+            rituals decrease the willpower needed to work deeply.
+          </p>
+
+          <h2 className="text-xl font-semibold mt-6 mb-3">
+            Strategy 1: Decide on your depth philosophy
+          </h2>
+          <p className="mb-2">
+            <span className="font-semibold">
+              Monastic philosophy of deep work:
+            </span>{" "}
+            People like Donald Knuth & Neal Stephenson attempt to completely
+            remove distraction and shallowness from their professional lives.
+          </p>
+          <p className="mb-2">
+            <span className="font-semibold">
+              Bimodal philosophy of deep work:
+            </span>{" "}
+            Splitting large chunks of time (whole days to weeks to months) into
+            deep work time and shallow work time (soft skills & networking). Ex.
+            Carl Jung
+          </p>
+          <p className="mb-2">
+            <span className="font-semibold">
+              Rhythmic philosophy of deep work:
+            </span>{" "}
+            Jerry Seinfeld exemplified this chaining technique, whereby every
+            day you accomplish a task which builds a chain. Think of a red X on
+            calendar every day. Don&apos;t break the chain!
+          </p>
+          <p className="mb-2 ml-3">
+            Eliminate scheduling decisions. Schedule deep work at same time
+            every day. For many people, this is the most applicable philosophy,
+            including me.
+          </p>
+          <p className="mb-2">
+            <span className="font-semibold">
+              Journalistic philosophy of deep work:
+            </span>{" "}
+            Being able to shift to a deep work mode ad-hoc. Not for the novice.
+          </p>
+
+          <h2 className="text-xl font-semibold mt-6 mb-3">
+            Strategy 2: Ritualize
+          </h2>
+          <p className="mb-2">
+            To make the most out of deep work sessions, build strict,
+            idiosyncratic rituals. Most effective rituals answer these items:
+          </p>
+          <ul className="list-disc ml-6 mb-4">
+            <li>Where will you work and for how long?</li>
+            <li>
+              How will you work once you start to work?
+              <ul className="list-disc ml-6">
+                <li>
+                  Implement rules such as no internet. Or set a chunk of time.
+                  Or a number of words. These aim at decreasing willpower
+                  litigation.
+                </li>
+              </ul>
+            </li>
+            <li>
+              How will you support your work?
+              <ul className="list-disc ml-6">
+                <li>Coffee? Long walks to think?</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h2 className="text-xl font-semibold mt-6 mb-3">
+            Strategy 3: Make Grand Gestures
+          </h2>
+          <p className="mb-2">
+            Want to make hard work stick? Leverage a radical change in your
+            normal environment, perhaps even pairing it with an investment of
+            money. For example, stay in a hotel for the express purpose of
+            working to achieve something in a new environment.
+          </p>
+          <p className="mb-2">
+            Grand gestures push goals to a level of priority that helps complete
+            the task. Sometimes to go deep, you must go big!
+          </p>
+
+          <h2 className="text-xl font-semibold mt-6 mb-3">
+            Strategy 4: Don&apos;t work alone
+          </h2>
+          <p className="mb-2">
+            This may seem counterproductive to the earlier strategies. Newport
+            argues that you should still maintain the isolated spaces needed for
+            deep work, but introduces the idea of a hub-and-spoke methodology.
+            The spokes represent domains of deep work, the hub is the
+            connections between peers that enable innovation and serendipity.
+          </p>
+
+          <p className="mb-2">
+            <span className="font-semibold">Whiteboard Effect:</span> Working in
+            tandem with someone in a shared space can sometimes lead to even
+            deeper work. This can also help overpower the temptation to avoid
+            deep work.
+          </p>
+
+          <h2 className="text-xl font-semibold mt-6 mb-3">
+            Strategy 5: Execute like a business
+          </h2>
+          <p className="mb-2">
+            Identifying a solution is easy (the what), executing is hard (the
+            how) ={">"} 4 execution strategies
+          </p>
+          <ol className="list-decimal ml-6 mb-4">
+            <li className="mb-2">
+              <span className="font-semibold">
+                Focus on the wildly important
+              </span>
+              <p className="ml-2">
+                The more you try to do, the less you actually accomplish. Aim
+                execution at small but important goals. Let ambitious goals
+                drive focused behaviors. Specific goals generate steadier
+                streams of motivation.
+              </p>
+            </li>
+            <li className="mb-2">
+              <span className="font-semibold">Act on the lead measures</span>
+              <p className="ml-2 mb-2">
+                Track and measure the success of goals using two key metrics:
+                lag and lead measures.
+              </p>
+              <p className="ml-2">
+                <span className="font-semibold">Lag measures: </span> Describe
+                the ultimate outcomes you're trying to improve. These are the
+                final results.
+              </p>
+              <p className="ml-2 mb-2">
+                <span className="font-semibold">Lead measures: </span> Describe
+                the actionable intermediate steps that directly influence your
+                lag measures.
+              </p>
+              <p className="ml-2">
+                For example, a lead measure might be hours spent in deep work,
+                while the lag measure could be project completion or output
+                quality.
+              </p>
+            </li>
+            <li className="mb-2">
+              <span className="font-semibold">
+                Keep a compelling scoreboard
+              </span>
+              <p className="ml-2">
+                Keep a public place to track lead measures.
+              </p>
+            </li>
+            <li className="mb-2">
+              <span className="font-semibold">
+                Create a cadence of accountability
+              </span>
+              <p className="ml-2">
+                Schedule regular reviews to confront your scoreboard
+              </p>
+            </li>
+          </ol>
+          <p className="mb-2">
+            All of these execution strategies drive you to perform more{" "}
+            <span className="italic">regularly</span> rather than{" "}
+            <span className="italic">intensely</span>!
+          </p>
+
+          <h2 className="text-xl font-semibold mt-6 mb-3">
+            Strategy 6: Be lazy
+          </h2>
+          <p className="mb-2">
+            Completely shutting down from work from time to time will actually
+            improve your ability to work deeper. When you take time to refresh,
+            this can actually shift work to the unconscious mind.
+          </p>
+          <p className="mb-2">
+            Decisions that involve large amounts of information and vague
+            constraints are well suited to the unconscious brain.
+          </p>
+          <p className="mb-2">
+            Quality rest allows focused attention mechanisms to replenish and
+            improves brain function.
+          </p>
+          <p className="mb-2">
+            A good tool for allowing your brain to rest is a shutdown ritual
+            where you plan for tomorrow and close out any work for the day. When
+            you&apos;re done, be done!
+          </p>
+        </div>
+
+        <div className="mb-6">
+          <h1 className="text-2xl font-bold mb-4">Rule 2: Embrace Boredom</h1>
+          <p className="mb-2">
+            Constant attention switching has a lasting negative effect. Our
+            brains have become accustomed to on-demand distractions. So the
+            ability to concentrate is only as strong as your commitment to train
+            it!
+          </p>
+
+          <h2 className="text-xl font-semibold mt-6 mb-3">
+            Don&apos;t take breaks from distraction, take breaks from focusing!
+          </h2>
+          <p className="mb-2">
+            <span className="font-semibold">Digital Sabbath:</span> Take a day
+            or hours to deliberately be network free.
+          </p>
+          <p className="mb-2">
+            Schedule internet use so as to strengthen attention muscles in the
+            brain.
+          </p>
+
+          <h2 className="text-xl font-semibold mt-6 mb-3">
+            Work like Teddy Roosevelt
+          </h2>
+          <p className="mb-2">
+            Deep work requires levels of concentration most people aren&apos;t
+            comfortable with. Experiment by setting a deadline for an intense
+            piece of work you have. Commit to finishing it much sooner than you
+            otherwise would. This forces work with great intensity!
+          </p>
+          <p className="mb-2">These are called Roosevelt dashes!</p>
+
+          <h2 className="text-xl font-semibold mt-6 mb-3">
+            Meditate Productively
+          </h2>
+          <p className="mb-2">
+            Take a period where you are occupied physically (running, walking)
+            and focus on a professional problem.
+          </p>
+
+          <h2 className="text-xl font-semibold mt-6 mb-3">
+            Memorize a deck of cards
+          </h2>
+          <p className="mb-2">
+            A quirky task of memory; memory training is improvement in the
+            general ability to concentrate. Literally done through visualization
+            of cards to objects.
+          </p>
+        </div>
+
+        <div className="mb-6">
+          <h1 className="text-2xl font-bold mb-4">Rule 3: Quit Social Media</h1>
+          <p className="mb-4">
+            Stop distracting yourself. With the goal to take back control of
+            your time and attention from the many diversions that attempt to
+            steal them!
+          </p>
+          <p className="mb-2">
+            Identify a middle ground (moderation): networking tools can be vital
+            to success and happiness in a connected world, but also accept that
+            there is a threshold for allowing these tools regular access to your
+            time and attention.
+          </p>
+          <p className="mb-2">
+            <span className="font-semibold">Any-benefit mindset:</span> Any
+            possible benefit (even tiny) or anything that you might miss out can
+            justify the use of a network tool.
+          </p>
+          <p className="mb-2">
+            <span className="font-semibold">Craftsman mindset:</span> Select
+            tools like a craftsman. Identify core factors related to success &
+            happiness. Adopt a tool only if it has positive impacts that
+            outweigh the negative.
+          </p>
+          <p className="mb-4">
+            Here are 3 strategies to help adopt the Craftsman mindset vs
+            Any-benefit:
+          </p>
+
+          <ol className="list-decimal ml-6 mb-4">
+            <li className="mb-4">
+              <span className="font-semibold text-lg">
+                Apply the Law of the Vital Few to your internet habits
+              </span>
+
+              <div className="ml-2 mt-2 mb-3 pb-1 border-l-2 border-gray-200 pl-3">
+                <p className="mb-1 font-medium">Three-step implementation:</p>
+                <p className="ml-2">
+                  <span className="font-medium">Step 1:</span> Identify
+                  high-level, meaningful goals in both professional and personal
+                  domains.
+                </p>
+                <p className="ml-2">
+                  <span className="font-medium">Step 2:</span> For each goal,
+                  determine the 2-3 specific activities that contribute most
+                  significantly to success.
+                </p>
+                <p className="ml-2 mb-2">
+                  <span className="font-medium">Step 3:</span> Evaluate each
+                  network tool you currently use by asking:{" "}
+                  <span className="font-semibold">
+                    {" "}
+                    Does this tool substantially support my key activities?
+                  </span>
+                </p>
+              </div>
+
+              <p className="ml-2">
+                <span className="font-semibold">The Law of the Vital Few:</span>{" "}
+                In many settings, 80% of a given effect is due to just 20% of
+                the possible causes.
+              </p>
+
+              <div className="ml-2 mt-2">
+                <p className="mb-1">
+                  When you invest time in lower-priority activities, you
+                  inevitably divert attention from what truly matters. Strategic
+                  focus means:
+                </p>
+                <ul className="list-disc ml-5 mb-2">
+                  <li>Identifying your vital 20% of activities</li>
+                  <li>
+                    Ruthlessly eliminating tools that primarily serve the less
+                    important 80%
+                  </li>
+                  <li>
+                    Concentrating your limited time on high-leverage tasks
+                  </li>
+                </ul>
+                <p className="italic">
+                  Remember: Your time yields substantially greater rewards when
+                  invested in high-impact activities.
+                </p>
+              </div>
+            </li>
+            <li className="mb-2">
+              <span className="font-semibold">Quit Social Media</span>
+              <p className="ml-2 mt-1">
+                Quit all social media for 30 days. After this period, only
+                return to platforms that provided substantial value to your
+                professional or personal goals.
+              </p>
+            </li>
+            <li className="mb-2">
+              <span className="font-semibold">
+                Don't use the internet to entertain yourself
+              </span>
+              <p className="ml-2 my-1">
+                Make deliberate use of your time outside of work instead of
+                defaulting to mindless browsing. Put more thought into your
+                leisure time. Network tools are designed to keep you engaged
+                without purpose. Dedicate advance thinking to how you want to
+                spend your day.
+              </p>
+              <p className="ml-2 mb-2">
+                Structured hobbies provide good fodder for these hours and
+                preserve your ability to resist distraction and concentrate.
+              </p>
+            </li>
+          </ol>
+          <div className="mt-6 p-4 bg-gray-800 rounded-lg">
+            <p className="text-lg font-medium">
+              Pursue the ambitious goal of experiencing what it means to live,
+              not just exist!
+            </p>
+          </div>
+        </div>
+
+        <div className="mb-6">
+          <h1 className="text-2xl font-bold mb-4">
+            Rule 4: Drain the Shallows
+          </h1>
+          <p className="mb-2">
+            Shallow work is inevitable. It must be confined so it doesn&apos;t
+            impede your ability to take full advantage of available deep work
+            time (4 hours for most humans).
+          </p>
+          <p className="mb-2">
+            Strategies to help identify shallowness in your schedule:
+          </p>
+
+          <h2 className="text-xl font-semibold mt-6 mb-3">
+            Schedule Every minute of your day
+          </h2>
+          <p className="mb-2">
+            Block your time into 30 minute intervals. Write what you want to do
+            in every block. It is expected that these blocks will need revisions
+            as the day throws challenges at you.
+          </p>
+          <p className="mb-2">
+            If disruptions happen, just make new blocks to the right of old
+            blocks. Goal is to maintain a thoughtful say in your schedule. Use
+            the schedule as a guide, some important insight can be a valid
+            reason to ignore the schedule. When done, rebuild the schedule!
+          </p>
+
+          <h2 className="text-xl font-semibold mt-6 mb-3">
+            Quantify the depth of every activity
+          </h2>
+          <p className="mb-2">
+            <span className="font-semibold">Shallow Work:</span> Non cognitively
+            demanding, logistical style tasks often performed while distracted.
+            Efforts tend not to create much new value and are easy to replicate.
+          </p>
+          <p className="mb-2">
+            How long would it take in months to train a smart recent college
+            graduate with no specialized training in my field to complete this
+            task?
+          </p>
+          <p className="mb-2">
+            Use the thought experiment to weigh your tasks on a shallow-to-deep
+            scale.
+          </p>
+
+          <h2 className="text-xl font-semibold mt-6 mb-3">
+            Ask your boss for a shallow work budget
+          </h2>
+          <p className="mb-2">
+            Most commonly between 30-50%. This will help you say no to projects.
+          </p>
+          <p className="mb-2">
+            Gives you a shallow-to-deep ratio that allows you to say no to
+            distractions guilt free.
+          </p>
+
+          <h2 className="text-xl font-semibold mt-6 mb-3">
+            Finish work by 5:30
+          </h2>
+          <p className="mb-2">
+            <span className="font-semibold">Fixed Schedule Productivity: </span>{" "}
+            Fix a firm goal of not working past a certain time and look
+            backwards from there.
+          </p>
+          <p className="mb-2">
+            Committing to working less forces your work time to be more
+            productive, cutting out any time for shallow work.
+          </p>
+          <h2 className="text-xl font-semibold mt-6 mb-3">
+            Become Hard to Reach
+          </h2>
+          <p className="mb-4">
+            Email seems ingrained in work culture, but you have every right to
+            regain authority over your mental landscape.
+          </p>
+
+          <div className="mb-5">
+            <p className="font-semibold mb-2">
+              Tip 1: Make people who send you email do more work
+            </p>
+            <p className="ml-2 mb-2">
+              <span className="font-medium">Sender Filter:</span> A practice
+              whereby you set clear expectations for senders before they contact
+              you. This creates a barrier that reduces low-value communications.
+            </p>
+          </div>
+
+          <div className="mb-5">
+            <p className="font-semibold mb-2">
+              Tip 2: Do more work when you send or respond to emails
+            </p>
+            <p className="ml-2 mb-2">
+              To avoid perpetual email chains, pause and consider this question
+              before sending any message:
+            </p>
+            <p className="ml-2 mb-2 pl-3 border-l-2 border-gray-300 italic">
+              What is the purpose of the project represented by this message,
+              and what is the most efficient (in terms of messages) process for
+              bringing this project to a successful conclusion?
+            </p>
+            <p className="ml-2 mb-2">
+              Your message should then describe the process identified, the
+              current step, and emphasize the step that comes next.
+            </p>
+            <p className="ml-2 mb-2">
+              This approach helps mentally close the loop of the conversation,
+              allowing mental space for more important tasks.
+            </p>
+          </div>
+
+          <div className="mb-2">
+            <p className="font-semibold mb-2">Tip 3: Don't respond</p>
+            <p className="ml-2 mb-2">
+              It's the sender's responsibility to convince the receiver that a
+              reply is worthwhile.
+            </p>
+            <p className="ml-2 mb-2">
+              To identify emails that don't merit a response, look for these
+              characteristics:
+            </p>
+            <ol className="list-decimal ml-6 mb-3">
+              <li className="mb-1">
+                It's ambiguous or makes a response difficult
+              </li>
+              <li className="mb-1">
+                It's not a question or proposal that interests you
+              </li>
+              <li className="mb-1">
+                Nothing really good would happen if you responded and nothing
+                really bad would happen if you didn't
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div className="mt-6 p-4 bg-gray-800 rounded-lg">
+          <p className="mb-2">
+            A commitment to deep work is not moral stance or philosophical
+            statement. It is a recognition that the ability to concentrate is a
+            skill that gets valuable things done.
+          </p>
+          <p className="italic">
+            &quot;I&apos;ll live the focused life, because that&apos;s the best
+            kind there is&quot;
+          </p>
+        </div>
+      </>
+    ),
+  },
+  {
     title: "Wool",
     url: "/books/wool",
     author: "Hugh Howey",
