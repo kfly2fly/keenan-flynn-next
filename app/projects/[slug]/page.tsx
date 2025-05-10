@@ -44,7 +44,7 @@ export default async function ProjectShowPage(props: ProjectShowPageProps) {
               alt={project.image.imageAlt}
               width={1200}
               height={515}
-              className="object-contain border-2 rounded-lg border-muted-foreground hover:opacity-85"
+              className="object-contain border-2 rounded-lg border-muted-foreground"
             />
           )}
         </section>
@@ -113,7 +113,7 @@ export default async function ProjectShowPage(props: ProjectShowPageProps) {
               alt={project.image.imageAlt}
               width={1200}
               height={515}
-              className="object-contain border-2 rounded-lg border-muted-foreground hover:opacity-85"
+              className="object-contain border-2 rounded-lg border-muted-foreground"
             />
           )}
         </section>
