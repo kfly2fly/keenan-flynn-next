@@ -519,14 +519,14 @@ export const BOOK_DATA = [
             </p>
             <ol className="list-decimal ml-6 mb-3">
               <li className="mb-1">
-                It's ambiguous or makes a response difficult
+                It&apos;s ambiguous or makes a response difficult
               </li>
               <li className="mb-1">
-                It's not a question or proposal that interests you
+                It&apos;s not a question or proposal that interests you
               </li>
               <li className="mb-1">
                 Nothing really good would happen if you responded and nothing
-                really bad would happen if you didn't
+                really bad would happen if you didn&apos;t
               </li>
             </ol>
           </div>
