@@ -27,13 +27,13 @@ export const BOOK_DATA = [
     summary: (
       <>
         <p className="mb-4">
-          I'm a big fan of Cal Newport. His ideas around work lifestyle really
-          connect with me because so much of our time is being competed for by
-          both digital and analog distractions. How are we not only supposed to
-          stay focused, but excel at our work in a digital age? Newport tries to
-          cut through the murk in Deep Work and offer solutions to this
-          question. As I read this book, I jotted some notes around the things
-          that really stood out to me. Enjoy!
+          I&apos;m a big fan of Cal Newport. His ideas around work lifestyle
+          really connect with me because so much of our time is being competed
+          for by both digital and analog distractions. How are we not only
+          supposed to stay focused, but excel at our work in a digital age?
+          Newport tries to cut through the murk in Deep Work and offer solutions
+          to this question. As I read this book, I jotted some notes around the
+          things that really stood out to me. Enjoy!
         </p>
 
         <div className="mb-6">
@@ -168,8 +168,8 @@ export const BOOK_DATA = [
               </p>
               <p className="ml-2">
                 <span className="font-semibold">Lag measures: </span> Describe
-                the ultimate outcomes you're trying to improve. These are the
-                final results.
+                the ultimate outcomes you&apos;re trying to improve. These are
+                the final results.
               </p>
               <p className="ml-2 mb-2">
                 <span className="font-semibold">Lead measures: </span> Describe
@@ -373,7 +373,7 @@ export const BOOK_DATA = [
             </li>
             <li className="mb-2">
               <span className="font-semibold">
-                Don't use the internet to entertain yourself
+                Don&apos;t use the internet to entertain yourself
               </span>
               <p className="ml-2 my-1">
                 Make deliberate use of your time outside of work instead of
@@ -508,14 +508,14 @@ export const BOOK_DATA = [
           </div>
 
           <div className="mb-2">
-            <p className="font-semibold mb-2">Tip 3: Don't respond</p>
+            <p className="font-semibold mb-2">Tip 3: Don&apos;t respond</p>
             <p className="ml-2 mb-2">
-              It's the sender's responsibility to convince the receiver that a
-              reply is worthwhile.
+              It&apos;s the sender&apos;s responsibility to convince the
+              receiver that a reply is worthwhile.
             </p>
             <p className="ml-2 mb-2">
-              To identify emails that don't merit a response, look for these
-              characteristics:
+              To identify emails that don&apos;t merit a response, look for
+              these characteristics:
             </p>
             <ol className="list-decimal ml-6 mb-3">
               <li className="mb-1">
