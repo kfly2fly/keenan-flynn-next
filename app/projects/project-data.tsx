@@ -1,5 +1,21 @@
 export const PROJECT_DATA = [
   {
+    title: "Learning Go",
+    url: "learn-go",
+    description: "Aa collection of go command-line applications",
+    githubUrl: "https://github.com/kfly2fly/learn-go",
+    markdownUrl:
+      "https://raw.githubusercontent.com/kfly2fly/learn-go/main/readme.md",
+    hostedUrl: null,
+    date_finished: new Date(2025, 3),
+    image: {
+      screenshot: "/projects/learn-go.png",
+      imageAlt: "Learn Go",
+    },
+
+    skills: ["Go", "CLI", "Goroutines"],
+  },
+  {
     title: "HTTP Server with C++",
     url: "cpp-http",
     description: "An HTTP Server built from scratch with C++",
