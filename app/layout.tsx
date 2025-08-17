@@ -1,6 +1,7 @@
 import "@/styles/globals.css"
 import { Metadata, type Viewport } from "next"
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import { siteConfig } from "@/config/site"
 import { fontSans } from "@/lib/fonts"
@@ -54,6 +55,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 {/* <div className=" mx-auto flex-1 px-4 md:px-12">{children}</div> */}
                 {children}
                 <Analytics />
+                <SpeedInsights />
               </div>
               <TailwindIndicator />
             </ThemeProvider>
