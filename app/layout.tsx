@@ -1,11 +1,12 @@
 import "@/styles/globals.css"
 import { Metadata, type Viewport } from "next"
+import { Analytics } from "@vercel/analytics/next"
 
 import { siteConfig } from "@/config/site"
 import { fontSans } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
-import SessionProviders from "@/components/providers/providers"
 import { SiteHeader } from "@/components/header/site-header"
+import SessionProviders from "@/components/providers/providers"
 import { TailwindIndicator } from "@/components/providers/tailwind-indicator"
 import { ThemeProvider } from "@/components/providers/theme-provider"
 
@@ -52,6 +53,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 <SiteHeader />
                 {/* <div className=" mx-auto flex-1 px-4 md:px-12">{children}</div> */}
                 {children}
+                <Analytics />
               </div>
               <TailwindIndicator />
             </ThemeProvider>
