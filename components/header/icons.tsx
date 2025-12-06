@@ -1,19 +1,18 @@
 import {
+  Link,
   Linkedin,
-  LucideProps,
+  Menu,
   Moon,
   Mountain,
   MountainSnow,
+  Star,
   SunMedium,
   Tent,
   Twitter,
-  Menu,
-  Star,
-  Link,
-  type Icon as LucideIcon,
+  type LucideProps,
 } from "lucide-react"
 
-export type Icon = LucideIcon
+export type Icon = React.FC<LucideProps>
 
 export const Icons = {
   sun: SunMedium,
@@ -24,6 +23,7 @@ export const Icons = {
   hamburger: Menu,
   star: Star,
   link: Link,
+
   logo: (props: LucideProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -36,6 +36,7 @@ export const Icons = {
       strokeLinecap="round"
       strokeLinejoin="round"
       className="lucide lucide-tent-tree"
+      {...props}
     >
       <circle cx="4" cy="4" r="2" />
       <path d="m14 5 3-3 3 3" />
@@ -46,6 +47,7 @@ export const Icons = {
       <path d="m9 14 5 8" />
     </svg>
   ),
+
   gitHub: (props: LucideProps) => (
     <svg viewBox="0 0 438.549 438.549" {...props}>
       <path
