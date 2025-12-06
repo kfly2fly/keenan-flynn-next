@@ -13,13 +13,14 @@ import { PROJECT_DATA } from "../project-data"
 export const revalidate = 3600
 
 interface ProjectShowPageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 export default async function ProjectShowPage(props: ProjectShowPageProps) {
-  const project = PROJECT_DATA.find((x) => x.url === props.params.slug)
+  const params = await props.params
+  const project = PROJECT_DATA.find((x) => x.url === params.slug)
 
   if (!project) {
     console.log("DOES NOT EXIST")

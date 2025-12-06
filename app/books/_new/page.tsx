@@ -1,16 +1,10 @@
 "use client"
 
-import Link from "next/link"
-import { redirect } from "next/navigation"
+import { useActionState } from "react"
 import { createBook } from "@/actions"
-import db from "@/db"
-import { useFormState } from "react-dom"
-
-import { siteConfig } from "@/config/site"
-import { buttonVariants } from "@/components/ui/button"
 
 export default function BookCreatePage() {
-  const [formState, action] = useFormState(createBook, { message: "" })
+  const [formState, action] = useActionState(createBook, { message: "" })
 
   return (
     <form action={action}>

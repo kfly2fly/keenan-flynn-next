@@ -1,5 +1,4 @@
 import Link from "next/link"
-import type { Dest, Post, User } from "@prisma/client"
 import type { EnrichedPost } from "@/db/queries/posts"
 
 import paths from "@/config/paths"
@@ -8,8 +7,7 @@ interface PostListProps {
   fetchData: () => Promise<EnrichedPost[]>
 }
 
-
-export default async function PostList({fetchData}: PostListProps) {
+export default async function PostList({ fetchData }: PostListProps) {
   const posts = await fetchData()
 
   const renderedPosts = posts.map((post) => {

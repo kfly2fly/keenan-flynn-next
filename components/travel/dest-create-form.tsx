@@ -1,21 +1,20 @@
 "use client"
 
+import { useActionState } from "react"
 import * as actions from "@/actions"
-import { useFormState } from "react-dom"
 
 import { Button } from "@/components/ui/button"
+import FormButton from "@/components/ui/form-button"
 import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
 import { Textarea } from "@/components/ui/textarea"
-import FormButton from "@/components/ui/form-button"
 
 export default function DestCreateForm() {
-  const [formState, action] = useFormState(actions.createDestination, {
+  const [formState, action] = useActionState(actions.createDestination, {
     errors: {},
   })
 
