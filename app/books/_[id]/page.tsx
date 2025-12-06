@@ -4,14 +4,14 @@ import * as actions from "@/actions"
 import db from "@/db"
 
 interface BookShowPageProps {
-  params: {
+  params: Promise<{
     id: string
-  }
+  }>
 }
 
 export default async function BookShowPage(props: BookShowPageProps) {
   const book = await db.book.findFirst({
-    where: { id: parseInt(props.params.id) },
+    where: { id: parseInt((await props.params).id) },
   })
 
   if (!book) {

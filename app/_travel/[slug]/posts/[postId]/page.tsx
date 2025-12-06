@@ -4,15 +4,16 @@ import paths from "@/config/paths"
 import PostShow from "@/components/travel/post-show"
 
 interface PostShowPageProps {
-  params: {
+  params: Promise<{
     slug: string
     postId: string
-  }
+  }>
 }
 
 
-export default async function PostShowPage({ params }: PostShowPageProps) {
-    const { slug, postId} = params
+export default async function PostShowPage(props: PostShowPageProps) {
+  const params = await props.params;
+  const { slug, postId} = params
 
   return (
     <div className="space-y-3">

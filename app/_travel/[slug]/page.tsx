@@ -1,15 +1,11 @@
-import { fetchPostsByDestSlug } from "@/db/queries/posts"
-
-import PostCreateForm from "@/components/travel/post-create-form"
-import PostList from "@/components/travel/post-list"
-
 interface DestShowPageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
-export default function DestinationShowPage({ params }: DestShowPageProps) {
+export default async function DestinationShowPage(props: DestShowPageProps) {
+  const params = await props.params
   const { slug } = params
 
   return (

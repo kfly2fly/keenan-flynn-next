@@ -1,12 +1,11 @@
 "use client"
 
+import { useActionState } from "react"
 import * as actions from "@/actions"
-import { useFormState } from "react-dom"
 
 import { Button } from "@/components/ui/button"
 import FormButton from "@/components/ui/form-button"
 import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
 import {
   Popover,
   PopoverContent,
@@ -19,7 +18,7 @@ interface PostCreateFormProps {
 }
 
 export default function PostCreateForm({ slug }: PostCreateFormProps) {
-  const [formState, action] = useFormState(
+  const [formState, action] = useActionState(
     actions.createPost.bind(null, slug),
     { errors: {} }
   )

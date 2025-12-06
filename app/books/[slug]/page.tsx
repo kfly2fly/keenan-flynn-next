@@ -7,13 +7,14 @@ import { BOOK_DATA } from "../book-data"
 export const revalidate = 3600
 
 interface BookShowPageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 export default async function BookShowPage(props: BookShowPageProps) {
-  const book = BOOK_DATA.find((x) => x.url === `/books/${props.params.slug}`)
+  const params = await props.params
+  const book = BOOK_DATA.find((x) => x.url === `/books/${params.slug}`)
 
   if (!book) {
     return <div>BOOK DOES NOT EXIST</div>
